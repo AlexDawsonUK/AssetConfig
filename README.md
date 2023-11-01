@@ -43,4 +43,4 @@ Best of all, if you want to detach yourself from the toolchain entirely and comp
 
 ## Tiny.txt
 
-I've also [written an eBook](https://assetconfig.com/#download) which describes in detail, how to take advantage of these tiny files (if you prefer learning about the mechanics rather than using a generator). Plus I've given a discussion on the subject, and the slides are [available here](https://assetconfig.com/cache/file/talk.pdf).
+I've also [written an eBook](https://assetconfig.com/#download) (available in both PDF and ePub formats) which describes in detail, how to take advantage of these tiny files (if you prefer learning about the mechanics rather than using a generator). Plus I've given a discussion on the subject, and the slides are [available here](https://assetconfig.com/cache/file/talk.pdf).
