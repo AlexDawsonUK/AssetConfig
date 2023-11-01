@@ -1,0 +1,2473 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Asset Config - The Web Asset Control Panel</title>
+		<meta name="description" content="Asset Config takes care of the small things. Control the production and management of .htaccess, sitemaps, robots.txt, vCards, and other unique web formats.">
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="cache/fonts/PTSerif-Bold.woff2">
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="cache/fonts/PTSerif-Regular.woff2">
+		<link rel="stylesheet" href="cache/style.css">
+		<link rel="author" type="text/plain" href="humans.txt">
+		<meta name="referrer" content="no-referrer">
+		<meta name="apple-mobile-web-app-title" content="Asset Config">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.ico" sizes="32x32">
+		<link rel="icon" type="image/svg+xml" href="images/icon.svg">
+		<link rel="manifest" href="site.webmanifest">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="msapplication-config" content="browserconfig.xml">
+		<meta property="og:title" content="Asset Config">
+		<meta property="og:description" content="Asset Config takes care of the small things. Control the production and management of .htaccess, sitemaps, robots.txt, vCards, and other unique web formats.">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="en_us">
+		<meta property="og:url" content="https://assetconfig.com/">
+		<meta property="og:image" content="images/banner.png">
+		<meta property="og:image:alt" content="Logo">
+		<script defer src="cache/script.js"></script>
+		<script type="application/ld+json">
+		{
+			"@context" : "https://schema.org",
+			"@type" : "WebSite",
+			"name": "Asset Config",
+			"url": "https://assetconfig.com/"
+		}
+		</script>
+	</head>
+	<body class="body">
+		<header class="header">
+			<div class="hgroup">
+				<h1 class="heading"><svg class="logo" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64"><path d="M56.156 0l4.203 35.722-4.718 0.555-3.753-31.902h-39.776l-3.753 31.902-4.718-0.555 4.203-35.722zM16 8h32v4h-32zM16 16h32v4h-32zM16 24h32v4h-32zM16 32h32v4h-32zM62 40h-60c-1.1 0-1.715 0.854-1.367 1.897l6.735 20.205c0.348 1.044 1.532 1.897 2.632 1.897h44c1.1 0 2.285-0.854 2.633-1.897l6.735-20.205c0.348-1.044-0.268-1.897-1.368-1.897zM40 48h-16v-4h16v4z"/></svg>Asset Config</h1>
+				<h2 class="subheading">The Web Asset Control Panel</h2>
+			</div>
+			<p class="overview">Asset Config takes care of the small things. Control the production and management of .htaccess, sitemaps, robots.txt, vCards, and other unique web formats.</p>
+			<ul class="book">
+				<li class="item"><a class="button" href="#toolbox">App Toolbox</a></li>
+				<li class="item"><a class="button" href="#download">Read Book</a></li>
+			</ul>
+		</header>
+		<main class="main">
+			<article class="page" id="toolbox">
+				<h2 class="screenReader">Toolbox</h2>
+				<ul class="grid">
+					<li class="list"><a class="anchor" href="#head"><strong class="strong">&lt;head&gt;<span> - </span></strong>Build an inventory of what you need in the head of your HTML document using links, metadata and other elements.</a></li>
+					<li class="list"><a class="anchor" href="#.htaccess"><strong class="strong">.htaccess<span> - </span></strong>Build Apache server configuration files with all the trimmings you may require for a fast, efficient, performant server.</a></li>
+					<li class="list"><a class="anchor" href="#ads.txt"><strong class="strong">ads.txt<span> - </span></strong>Ensure that advertisement fraud is reduced using a simple SEO friendly text file to verify your sales channels.</a></li>
+					<li class="list"><a class="anchor" href="#carbon.txt"><strong class="strong">carbon.txt<span> - </span></strong>Use this emerging standard to both track and validate your businesses digital green credentials across the web.</a></li>
+					<li class="list"><a class="anchor" href="#change.log"><strong class="strong">change.log<span> - </span></strong>Build a changelog that identifies additions, changes, deprecations, removals, fixes, and security patches.</a></li>
+					<li class="list"><a class="anchor" href="#clientaccesspolicy.xml"><strong class="strong">clientaccesspolicy.xml<span> - </span></strong>Now obsolete due to Microsoft Silverlight being redundant, you can build the streaming policy file here.</a></li>
+					<li class="list"><a class="anchor" href="#crossdomain.xml"><strong class="strong">crossdomain.xml<span> - </span></strong>Now obsolete due to Adobe Flash's retirement, you can still build the streaming allowance policy file here.</a></li>
+					<li class="list"><a class="anchor" href="#dublin.rdf"><strong class="strong">dublin.rdf<span> - </span></strong>If you rely on RDF metadata, use this generator to quickly build a profile index of your website for SEO purposes.</a></li>
+					<li class="list"><a class="anchor" href="#error.html"><strong class="strong">error.html<span> - </span></strong>Mistakes happen, so use this error page (and it's anchor references) to cover your possible problematic endpoints.</a></li>
+					<li class="list"><a class="anchor" href="#event.ics"><strong class="strong">event.ics<span> - </span></strong>Craft downloadable event files that are supported by both desktop and mobile calendar (and email) applications.</a></li>
+					<li class="list"><a class="anchor" href="#favicon.ico"><strong class="strong">favicon.ico<span> - </span></strong>Generate the various images required for multi-platform support for browsers, banners, and icons with this checklist.</a></li>
+					<li class="list"><a class="anchor" href="#feed.xml"><strong class="strong">feed.xml<span> - </span></strong>Generate a RSS, Atom or JSON feed that's compatible with both syndication readers or podcast clients like iTunes.</a></li>
+					<li class="list"><a class="anchor" href="#foaf.rdf"><strong class="strong">foaf.rdf<span> - </span></strong>If you're a member of the FOAF scheme, use this tool to build a profile of your online identity for SEO purposes.</a></li>
+					<li class="list"><a class="anchor" href="#geo.rdf"><strong class="strong">geo.rdf<span> - </span></strong>If you rely on RDF metadata, create an indexable link to your location, with full Google Earth zoomer integration.</a></li>
+					<li class="list"><a class="anchor" href="#humans.txt"><strong class="strong">humans.txt<span> - </span></strong>Give credit where it's due with the standardised, self-contained, non-impactful accreditation text file format.</a></li>
+					<li class="list"><a class="anchor" href="#index.html"><strong class="strong">index.html<span> - </span></strong>Every project needs a starting point, this is mine. Generate a HTML5 boilerplate that'll get your project started well.</a></li>
+					<li class="list"><a class="anchor" href="#legal.txt"><strong class="strong">legal.txt<span> - </span></strong>Generate a license, terms of service, impressum, accessibility statements, and privacy policy document for your site.</a></li>
+					<li class="list"><a class="anchor" href="#list.opml"><strong class="strong">list.opml<span> - </span></strong>Create a curated list of items, whether links or media to show your visitors what they really should subscribe to.</a></li>
+					<li class="list"><a class="anchor" href="#modes.css"><strong class="strong">modes.css<span> - </span></strong>Generate a default dark mode, prefers reduced motion, monochrome and a prefers reduced data stylesheet.</a></li>
+					<li class="list"><a class="anchor" href="#opensearch.xml"><strong class="strong">opensearch.xml<span> - </span></strong>Integrate your sites search engine into the users browser to improve their access to your service quickly and easily.</a></li>
+					<li class="list"><a class="anchor" href="#p3p.xml"><strong class="strong">p3p.xml<span> - </span></strong>While this standard is obsolete for browsers other than IE9 or lower, you can still build the privacy file here.</a></li>
+					<li class="list"><a class="anchor" href="#powder.xml"><strong class="strong">powder.xml<span> - </span></strong>Got children visiting your site? Add content labelling plus optional support for the older extended PICS scheme.</a></li>
+					<li class="list"><a class="anchor" href="#print.css"><strong class="strong">print.css<span> - </span></strong>Setup a default stylesheet for when your website is being printed or exported to an offline document format like PDF.</a></li>
+					<li class="list"><a class="anchor" href="#readme"><strong class="strong">README<span> - </span></strong>Create a README document for developers working on production files, or projects, critical to the website.</a></li>
+					<li class="list"><a class="anchor" href="#robots.txt"><strong class="strong">robots.txt<span> - </span></strong>Generate a robots text file using the extended standard to ensure search engines can find all your pages easily.</a></li>
+					<li class="list"><a class="anchor" href="#security.txt"><strong class="strong">security.txt<span> - </span></strong>Show you mean business by giving your security related website details, and (if required) add a do not track policy.</a></li>
+					<li class="list"><a class="anchor" href="#site.webmanifest"><strong class="strong">site.webmanifest<span> - </span></strong>Ensure your PWA is complete. Add this manifest, and even a browserconfig for old IE users to add tile support.</a></li>
+					<li class="list"><a class="anchor" href="#sitemap.xml"><strong class="strong">sitemap.xml<span> - </span></strong>Generate a complete inventory of your pages to ensure that search engines can correctly index your website.</a></li>
+					<li class="list"><a class="anchor" href="#style.css"><strong class="strong">style.css<span> - </span></strong>Every site begins with some generic styles, these are mine. Generate a DRY stylesheet for your new project.</a></li>
+					<li class="list"><a class="anchor" href="#subtitles.vtt"><strong class="strong">subtitles.vtt<span> - </span></strong>Meet accessibility standards by creating video subtitles. Using timestamps, add text to go along with the spoken word.</a></li>
+					<li class="list"><a class="anchor" href="#sw.js"><strong class="strong">sw.js<span> - </span></strong>Generate a basic service worker to get your progressive web application up and running using this simple tool.</a></li>
+					<li class="list"><a class="anchor" href="#vcard.vcf"><strong class="strong">vcard.vcf<span> - </span></strong>Add your business or personal details into a downloadable address book file supported on desktop and mobile.</a></li>
+				</ul>
+			</article>
+			<article class="page" id="head">
+				<h2 class="screenReader">Head</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">&lt;head&gt;</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Base Elements</legend>
+							<ul class="form">
+								<li class="gap">
+									<label class="info" for="head-title">Project Title:</label>
+									<input class="txt" type="text" name="head-title" id="head-title" required>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-base" name="head-base">
+									<label class="info" for="head-base">Do you need a base element?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-style1" name="head-style1">
+									<label class="info" for="head-style1">Do you need any inline CSS?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-style2" name="head-style2" checked>
+									<label class="info" for="head-style2">Do you need an external CSS link?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-script1" name="head-script1" checked>
+									<label class="info" for="head-script1">Do you need an external JS link?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-script2" name="head-script2">
+									<label class="info" for="head-script2">Do you need any inline JavaScript?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-style3" name="head-style3">
+									<label class="info" for="head-style3">Do you need an alternative CSS link?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">http-equiv Elements</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="head-csp" name="head-csp">
+									<label class="info" for="head-csp">Do you need a content security policy?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-content" name="head-content">
+									<label class="info" for="head-content">Do you need to define a MIME type?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-default" name="head-default">
+									<label class="info" for="head-default">Do you have more than one CSS theme?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-ie6" name="head-ie6">
+									<label class="info" for="head-ie6">Do you have any IE6 users left?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-refresh" name="head-refresh">
+									<label class="info" for="head-refresh">Do you need to force a redirection?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-target" name="head-target">
+									<label class="info" for="head-target">Do you use frames in your website?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-dns" name="head-dns">
+									<label class="info" for="head-dns">Does DNS prefetching glitch your site?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-iex" name="head-iex">
+									<label class="info" for="head-iex">Do you have Internet Explorer 8-10 users?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Name Elements</legend>
+							<ul class="form">
+								<li class="gap">
+									<label class="info" for="head-desc">Project Description:</label>
+									<textarea class="txt area" maxlength="156" name="head-desc" id="head-desc" required></textarea>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-viewport" name="head-viewport" checked>
+									<label class="info" for="head-viewport">Do you want to set the base mobile viewport?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-about" name="head-about">
+									<label class="info" for="head-about">Do you want to offer generic META data about you?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-app" name="head-app">
+									<label class="info" for="head-app">Do you want to make your app run on iOS and Android?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-color" name="head-color">
+									<label class="info" for="head-color">Does your app prefer a specific palette like dark mode?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-phone" name="head-phone">
+									<label class="info" for="head-phone">Do you want to disable phone number detection?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-geo" name="head-geo">
+									<label class="info" for="head-geo">Do you want to offer geodata about you?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-google" name="head-google">
+									<label class="info" for="head-google">Do you want to disable Google in-page services?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-robots" name="head-robots">
+									<label class="info" for="head-robots">Does this page need to be excluded from search?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-ietile" name="head-ietile">
+									<label class="info" for="head-ietile">Do you want to provide tile images for IE users?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-monetize" name="head-monetize">
+									<label class="info" for="head-monetize">Do you monetize your site using a payment stream?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-pinterest" name="head-pinterest">
+									<label class="info" for="head-pinterest">Do you want to block Pinterest pinning?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-rating" name="head-rating">
+									<label class="info" for="head-rating">Do you want to make the site adults only?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-refer" name="head-refer">
+									<label class="info" for="head-refer">Do you want to manage referer requests?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Other Elements</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="head-og" name="head-og">
+									<label class="info" for="head-og">Do you want to offer social media metadata?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-twitter" name="head-twitter">
+									<label class="info" for="head-twitter">Do you want to offer Twitter cards?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-dcmi" name="head-dcmi">
+									<label class="info" for="head-dcmi">Do you want to offer DCMI metadata?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Url Elements</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="head-amp" name="head-amp">
+									<label class="info" for="head-amp">Do you want to offer a Google AMP link?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-nav" name="head-nav">
+									<label class="info" for="head-nav">Do you want to offer embedded navigation links?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-canon" name="head-canon">
+									<label class="info" for="head-canon">Do you want to set the canonical link?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-prefetch" name="head-prefetch">
+									<label class="info" for="head-prefetch">Do you want to prefetch site resources?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-edit" name="head-edit">
+									<label class="info" for="head-edit">Do you want to include editor links?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-openid" name="head-openid">
+									<label class="info" for="head-openid">Do you want to include OpenID support?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Asset Elements</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="head-feed" name="head-feed">
+									<label class="info" for="head-feed">Do you want to offer syndication feeds?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-favicon" name="head-favicon">
+									<label class="info" for="head-favicon">Do you want to add favicons and splash screens?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-credit" name="head-credit">
+									<label class="info" for="head-credit">Do you want to give credit to anyone?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-index" name="head-index">
+									<label class="info" for="head-index">Do you want to index this site using metadata?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-safe" name="head-safe">
+									<label class="info" for="head-safe">Do you want to attach a family-friendly label?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-license" name="head-license">
+									<label class="info" for="head-license">Do you have a license that needs referencing?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-p3p" name="head-p3p">
+									<label class="info" for="head-p3p">Do you need P3P support for old IE6 users?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="head-search" name="head-search">
+									<label class="info" for="head-search">Do you want to allow search within browsers?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="head-generate">Generate</button>
+						<button class="btn hide" type="button" id="head-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id=".htaccess">
+				<h2 class="screenReader">.htaccess</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">.htaccess</legend>
+						<fieldset class="spacer">
+							<legend class="assist">CORS Requests</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="hta-corimg" name="hta-corimg" checked>
+									<label class="info" for="hta-corimg">Do you want to send CORS headers for images?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-corttf" name="hta-corttf" checked>
+									<label class="info" for="hta-corttf">Do you want to send the CORS header for fonts?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-corall" name="hta-corall">
+									<label class="info" for="hta-corall">Do you want to allow all CORS requests? (Dangerous)</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-corsub" name="hta-corsub">
+									<label class="info" for="hta-corsub">Do you want to allow CORS requests from a subdomain?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-cortiming" name="hta-cortiming">
+									<label class="info" for="hta-cortiming">Do you want to allow CORS access to timing info?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Rendering Settings</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="hta-ie" name="hta-ie">
+									<label class="info" for="hta-ie">Do you need to support Internet Explorer 8-10 users?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-encode" name="hta-encode" checked>
+									<label class="info" for="hta-encode">Do you want to ensure your files render in unicode?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-mime" name="hta-mime">
+									<label class="info" for="hta-mime">Do you want to prevent filetype mismatches occuring?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Rewrites Settings</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="hta-noerr" name="hta-noerr" checked>
+									<label class="info" for="hta-noerr">Do you want to prevent errors resulting from rewrites?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-404" name="hta-404" checked>
+									<label class="info" for="hta-404">Do you want to include error pages for your visitors?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-301" name="hta-301">
+									<label class="info" for="hta-301">Do you want to redirect your visitors to a new location?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-https" name="hta-https" checked>
+									<label class="info" for="hta-https">Do you want to redirect all your http traffic to https?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-nwww" name="hta-nwww">
+									<label class="info" for="hta-nwww">Do you want to suppress the www. from your website?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-ywww" name="hta-ywww">
+									<label class="info" for="hta-ywww">Do you want to force the www. from your website?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-ver" name="hta-ver">
+									<label class="info" for="hta-ver">Do you not have versioning or a system like GIT?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Security Settings</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="hta-block" name="hta-block" checked>
+									<label class="info" for="hta-block">Do you want to block individuals from your website?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-hotlink" name="hta-hotlink">
+									<label class="info" for="hta-hotlink">Do you want to prevent hotlinking on your website?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-ckjk" name="hta-ckjk">
+									<label class="info" for="hta-ckjk">Do you want to block clickjacking (hurts Google images)?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-csp" name="hta-csp" checked>
+									<label class="info" for="hta-csp">Do you want to implement a <a href="https://report-uri.com/home/generate/">content security policy</a>?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-index" name="hta-index" checked>
+									<label class="info" for="hta-index">Do you want to block access to directories with no default file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-hidden" name="hta-hidden" checked>
+									<label class="info" for="hta-hidden">Do you want to block access to hidden files and directories?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-backup" name="hta-backup" checked>
+									<label class="info" for="hta-backup">Do you want to block access to backups and source files?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-hsts" name="hta-hsts">
+									<label class="info" for="hta-hsts">Do you want to force <a href="https://hstspreload.org/">HTTPS</a>, regardless of consequences?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-sniff" name="hta-sniff" checked>
+									<label class="info" for="hta-sniff">Do you want to prevent sniffing based security issues?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-php" name="hta-php" checked>
+									<label class="info" for="hta-php">Do you want to prevent PHP fingerprinting security issues?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-usize" name="hta-usize" checked>
+									<label class="info" for="hta-usize">Do you want to set the upload size to reduce DoS attacks?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-xss" name="hta-xss">
+									<label class="info" for="hta-xss">Do you want to include a basic XSS protection script?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-refer" name="hta-refer">
+									<label class="info" for="hta-refer">Do you want to mitigate data leakage using a basic script?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-trace" name="hta-trace">
+									<label class="info" for="hta-trace">Do you use plug-in tools like Flash, Java or Silverlight?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-sig" name="hta-sig" checked>
+									<label class="info" for="hta-sig">Do you want to hide server and language information?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Performance Settings</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="hta-gzip" name="hta-gzip" checked>
+									<label class="info" for="hta-gzip">Do you want to compress documents using gzip?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-brotli" name="hta-brotli">
+									<label class="info" for="hta-brotli">Do you want to serve Brotli compressed archives?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-gzip2" name="hta-gzip2">
+									<label class="info" for="hta-gzip2">Do you want to serve gzip compressed archives?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-proxy" name="hta-proxy">
+									<label class="info" for="hta-proxy">Are proxy's and data savers wrecking your layout?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-etag" name="hta-etag" checked>
+									<label class="info" for="hta-etag">Do you want to clear redundant eTags from headers?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="hta-expire" name="hta-expire" checked>
+									<label class="info" for="hta-expire">Do you want to set expiry timescales for documents?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="hta-generate">Generate</button>
+						<button class="btn hide" type="button" id="hta-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="ads.txt">
+				<h2 class="screenReader">ads.txt</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">ads.txt</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Ads Record</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="ads-record" name="ads-record" checked>
+									<label class="info" for="ads-record">Do you want to include an advertising record?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Ads Extensions</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="ads-sub" name="ads-sub">
+									<label class="info" for="ads-sub">Do you want to point your root to a subdomain?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="ads-contact" name="ads-contact">
+									<label class="info" for="ads-contact">Do you want to give advertiser contact details?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="ads-generate">Generate</button>
+						<button class="btn hide" type="button" id="ads-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="carbon.txt">
+				<h2 class="screenReader">carbon.txt</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">carbon.txt</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Carbon Record</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="carbon-record" name="carbon-record" checked>
+									<label class="info" for="carbon-record">Do you want to include a carbon record?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Carbon Extensions</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="carbon-details" name="carbon-details">
+									<label class="info" for="carbon-details">Do you want to provide details on the host?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="carbon-generate">Generate</button>
+						<button class="btn hide" type="button" id="carbon-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="change.log">
+				<h2 class="screenReader">change.log</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">change.log</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Changes</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="change-add" name="change-add" checked>
+									<label class="info" for="change-add">Do you want to include an addition?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-cha" name="change-cha" checked>
+									<label class="info" for="change-cha">Do you want to include a change?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-dep" name="change-dep" checked>
+									<label class="info" for="change-dep">Do you want to include a deprecation?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-rem" name="change-rem" checked>
+									<label class="info" for="change-rem">Do you want to include a removal?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-fix" name="change-fix" checked>
+									<label class="info" for="change-fix">Do you want to include a bug fix?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-sec" name="change-sec" checked>
+									<label class="info" for="change-sec">Do you want to include a security patch?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Boilerplate</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="change-changelog" name="change-changelog">
+									<label class="info" for="change-changelog">Do you want to declare a change.log?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-dessys" name="change-dessys">
+									<label class="info" for="change-dessys">Do you want to declare a design system?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-hta" name="change-hta">
+									<label class="info" for="change-hta">Do you want to declare a .htaccess file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-html" name="change-html">
+									<label class="info" for="change-html">Do you want to declare a index &amp; error file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-img" name="change-img">
+									<label class="info" for="change-img">Do you want to declare your published images?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-css" name="change-css">
+									<label class="info" for="change-css">Do you want to declare a CSS stylesheet?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-xfont" name="change-xfont">
+									<label class="info" for="change-xfont">Do you want to declare an external font?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-gfont" name="change-gfont">
+									<label class="info" for="change-gfont">Do you want to declare a Google font?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-license" name="change-license">
+									<label class="info" for="change-license">Do you want to declare a license or policy?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-humans" name="change-humans">
+									<label class="info" for="change-humans">Do you want to declare a humans.txt file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-security" name="change-security">
+									<label class="info" for="change-security">Do you want to declare a security.txt file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-ads" name="change-ads">
+									<label class="info" for="change-ads">Do you want to declare an ads.txt file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-robots" name="change-robots">
+									<label class="info" for="change-robots">Do you want to declare a robots.txt file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-favicon" name="change-favicon">
+									<label class="info" for="change-favicon">Do you want to declare your favicons?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-pwa" name="change-pwa">
+									<label class="info" for="change-pwa">Do you want to declare your PWA manifest assets?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-event" name="change-event">
+									<label class="info" for="change-event">Do you want to declare a event.ics file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-vcard" name="change-vcard">
+									<label class="info" for="change-vcard">Do you want to declare a vcard.vcf file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-rss" name="change-rss">
+									<label class="info" for="change-rss">Do you want to declare your syndication feeds?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-dcmi" name="change-dcmi">
+									<label class="info" for="change-dcmi">Do you want to declare your DCMI metadata assets?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-sitemap" name="change-sitemap">
+									<label class="info" for="change-sitemap">Do you want to declare a sitemap.xml file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-opensearch" name="change-opensearch">
+									<label class="info" for="change-opensearch">Do you want to declare a opensearch.xml file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-subtitles" name="change-subtitles">
+									<label class="info" for="change-subtitles">Do you want to declare a subtitles.vtt file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-carbon" name="change-carbon">
+									<label class="info" for="change-carbon">Do you want to declare a carbon.txt file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-dnt" name="change-dnt">
+									<label class="info" for="change-dnt">Do you want to declare some DNT asset files?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-pics" name="change-pics">
+									<label class="info" for="change-pics">Do you want to declare your site child friendly?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-js" name="change-js">
+									<label class="info" for="change-js">Do you want to declare a JavaScript file?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Log Extensions</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="change-unrel" name="change-unrel">
+									<label class="info" for="change-unrel">Do you want to include unreleased features?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="change-guide" name="change-guide">
+									<label class="info" for="change-guide">Do you want to include a changelog guide?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="change-generate">Generate</button>
+						<button class="btn hide" type="button" id="change-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="clientaccesspolicy.xml">
+				<h2 class="screenReader">clientaccesspolicy.xml</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">clientaccesspolicy.xml</legend>
+						<button class="btn show" type="button" id="clientaccesspolicy-generate">Generate</button>
+						<button class="btn hide" type="button" id="clientaccesspolicy-download">Download</button>
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="crossdomain.xml">
+				<h2 class="screenReader">crossdomain.xml</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">crossdomain.xml</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Flash Policy</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="radio" id="flash-domain" name="flash" value="flash-domain">
+									<label class="info" for="flash-domain">Allow Flash to request data from the root domain? (Moderate)</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="flash-min" name="flash" value="flash-min" checked>
+									<label class="info" for="flash-min">Block Flash from requesting data from any domain? (Safest)</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="flash-max" name="flash" value="flash-max">
+									<label class="info" for="flash-max">Allow Flash to request data from any domain? (Dangerous)</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="crossdomain-generate">Generate</button>
+						<button class="btn hide" type="button" id="crossdomain-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="dublin.rdf">
+				<h2 class="screenReader">dublin.rdf</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">dublin.rdf</legend>
+						<fieldset class="spacer">
+							<legend class="assist">DCMI Records</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="dublin-con" name="dublin-con">
+									<label class="info" for="dublin-con">Do you want to include contributors?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-cov" name="dublin-cov">
+									<label class="info" for="dublin-cov">Do you want to include a location?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-cre" name="dublin-cre" checked>
+									<label class="info" for="dublin-cre">Do you want to include an author?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-dat" name="dublin-dat" checked>
+									<label class="info" for="dublin-dat">Do you want to include a date?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-des" name="dublin-des" checked>
+									<label class="info" for="dublin-des">Do you want to include a description?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-for" name="dublin-for">
+									<label class="info" for="dublin-for">Do you want to include a file type?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-ide" name="dublin-ide">
+									<label class="info" for="dublin-ide">Do you want to include an ISSN or ISBN?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-lan" name="dublin-lan" checked>
+									<label class="info" for="dublin-lan">Do you want to include a language?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-pub" name="dublin-pub">
+									<label class="info" for="dublin-pub">Do you want to include an organization?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-rel" name="dublin-rel">
+									<label class="info" for="dublin-rel">Do you want to include a reference?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-rig" name="dublin-rig">
+									<label class="info" for="dublin-rig">Do you want to include a copyright link?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-sou" name="dublin-sou" checked>
+									<label class="info" for="dublin-sou">Do you want to include a source?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-sub" name="dublin-sub">
+									<label class="info" for="dublin-sub">Do you want to include a subject?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-tit" name="dublin-tit">
+									<label class="info" for="dublin-tit">Do you want to include a project title?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="dublin-typ" name="dublin-typ">
+									<label class="info" for="dublin-typ">Do you want to include a category?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="dublin-generate">Generate</button>
+						<button class="btn hide" type="button" id="dublin-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="error.html">
+				<h2 class="screenReader">error.html</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">error.html</legend>
+						<fieldset class="spacer">
+							<legend class="assist">4×× Errors</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="error-400" name="error-400" checked>
+									<label class="info" for="error-400">Do you want to include a 400 Bad Request error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-401" name="error-401" checked>
+									<label class="info" for="error-401">Do you want to include a 401 Unauthorized error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-402" name="error-402">
+									<label class="info" for="error-402">Do you want to include a 402 Payment Required error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-403" name="error-403" checked>
+									<label class="info" for="error-403">Do you want to include a 403 Access Forbidden error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-404" name="error-404" checked>
+									<label class="info" for="error-404">Do you want to include a 404 Resource Not Found error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-405" name="error-405">
+									<label class="info" for="error-405">Do you want to include a 405 Method Not Allowed error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-406" name="error-406">
+									<label class="info" for="error-406">Do you want to include a 406 Not Acceptable error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-407" name="error-407">
+									<label class="info" for="error-407">Do you want to include a 407 Proxy Authentication Required error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-408" name="error-408" checked>
+									<label class="info" for="error-408">Do you want to include a 408 Request Timeout error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-409" name="error-409">
+									<label class="info" for="error-409">Do you want to include a 409 Conflict error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-410" name="error-410" checked>
+									<label class="info" for="error-410">Do you want to include a 410 Gone error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-411" name="error-411">
+									<label class="info" for="error-411">Do you want to include a 411 Length Required error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-412" name="error-412">
+									<label class="info" for="error-412">Do you want to include a 412 Precondition Failed error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-413" name="error-413">
+									<label class="info" for="error-413">Do you want to include a 413 Payload Too Large error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-414" name="error-414">
+									<label class="info" for="error-414">Do you want to include a 414 Request-URI Too Long error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-415" name="error-415">
+									<label class="info" for="error-415">Do you want to include a 415 Unsupported Media Type error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-416" name="error-416">
+									<label class="info" for="error-416">Do you want to include a 416 Requested Range Not Satisfiable error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-417" name="error-417">
+									<label class="info" for="error-417">Do you want to include a 417 Expectation Failed error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-418" name="error-418">
+									<label class="info" for="error-418">Do you want to include a 418 I'm A Teapot error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-421" name="error-421">
+									<label class="info" for="error-421">Do you want to include a 421 Misdirected Request error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-422" name="error-422">
+									<label class="info" for="error-422">Do you want to include a 422 Unprocessable Entity error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-423" name="error-423">
+									<label class="info" for="error-423">Do you want to include a 423 Locked error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-424" name="error-424">
+									<label class="info" for="error-424">Do you want to include a 424 Failed Dependency error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-426" name="error-426">
+									<label class="info" for="error-426">Do you want to include a 426 Upgrade Required error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-428" name="error-428">
+									<label class="info" for="error-428">Do you want to include a 428 Precondition Required error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-429" name="error-429" checked>
+									<label class="info" for="error-429">Do you want to include a 429 Too Many Requests error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-431" name="error-431">
+									<label class="info" for="error-431">Do you want to include a 431 Request Header Fields Too Large error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-444" name="error-444">
+									<label class="info" for="error-444">Do you want to include a 444 Connection Closed Without Response error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-451" name="error-451">
+									<label class="info" for="error-451">Do you want to include a 451 Unavailable For Legal Reasons error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-499" name="error-499">
+									<label class="info" for="error-499">Do you want to include a 499 Client Closed Request error?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">5×× Errors</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="error-500" name="error-500" checked>
+									<label class="info" for="error-500">Do you want to include a 500 Internal Server Error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-501" name="error-501" checked>
+									<label class="info" for="error-501">Do you want to include a 501 Not Implemented Error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-502" name="error-502" checked>
+									<label class="info" for="error-502">Do you want to include a 502 Bad Gateway Error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-503" name="error-503" checked>
+									<label class="info" for="error-503">Do you want to include a 503 Service Unavailable error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-504" name="error-504" checked>
+									<label class="info" for="error-504">Do you want to include a 504 Gateway Timeout Error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-505" name="error-505">
+									<label class="info" for="error-505">Do you want to include a 505 HTTP Version Not Supported Error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-506" name="error-506">
+									<label class="info" for="error-506">Do you want to include a 506 Variant Also Negotiates Error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-507" name="error-507">
+									<label class="info" for="error-507">Do you want to include a 507 Insufficient Storage Error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-508" name="error-508" checked>
+									<label class="info" for="error-508">Do you want to include a 508 Loop Detected Error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-510" name="error-510">
+									<label class="info" for="error-510">Do you want to include a 510 Not Extended Error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-511" name="error-511">
+									<label class="info" for="error-511">Do you want to include a 511 Network Authentication Required Error?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="error-599" name="error-599">
+									<label class="info" for="error-599">Do you want to include a 599 Network Connect Timeout Error?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="error-generate">Generate</button>
+						<button class="btn hide" type="button" id="error-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="event.ics">
+				<h2 class="screenReader">event.ics</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">event.ics</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Event Basics</legend>
+							<ul class="form">
+								<li class="gap">
+									<label class="info" for="event-summary">Event Summary:</label>
+									<input class="txt" type="text" name="event-summary" id="event-summary" required>
+								</li>
+								<li class="gap">
+									<label class="info" for="event-frequency">Frequency:</label>
+									<select class="select txt" name="frequency" id="event-frequency">
+										<option value="" selected>None</option>
+										<option value="DAILY">Daily</option>
+										<option value="WEEKLY">Weekly</option>
+										<option value="MONTHLY">Monthly</option>
+										<option value="YEARLY">Yearly</option>
+									</select>
+									<select class="select txt" name="repeat" id="event-repeat">
+										<option value="" selected>None</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+									<select class="select txt" name="month" id="event-month">
+										<option value="" selected>None</option>
+										<option value="1">January</option>
+										<option value="2">Febuary</option>
+										<option value="3">March</option>
+										<option value="4">April</option>
+										<option value="5">May</option>
+										<option value="6">June</option>
+										<option value="7">July</option>
+										<option value="8">August</option>
+										<option value="9">September</option>
+										<option value="10">October</option>
+										<option value="11">November</option>
+										<option value="12">December</option>
+									</select>
+									<select class="select txt" name="day" id="event-day">
+										<option value="" selected>None</option>
+										<option value="MO">Monday</option>
+										<option value="TU">Tuesday</option>
+										<option value="WE">Wednesday</option>
+										<option value="TH">Thursday</option>
+										<option value="FR">Friday</option>
+										<option value="SA">Saturday</option>
+										<option value="SU">Sunday</option>
+									</select>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="event-location" name="event-location" checked>
+									<label class="info" for="event-location">Do you want to include a Location?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="event-url" name="event-url">
+									<label class="info" for="event-url">Do you want to include a URL?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="event-reminder" name="event-reminder">
+									<label class="info" for="event-reminder">Do you want to include a Reminder?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Event Extensions</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="event-timestamp" name="event-timestamp">
+									<label class="info" for="event-timestamp">Do you want to include a Timestamp?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="event-organizer" name="event-organizer">
+									<label class="info" for="event-organizer">Do you want to include an Organizer?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="event-description" name="event-description">
+									<label class="info" for="event-description">Do you want to include Notes?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="event-uid" name="event-uid" checked>
+									<label class="info" for="event-uid">Do you want to include a UID?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="event-generate">Generate</button>
+						<button class="btn hide" type="button" id="event-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="favicon.ico">
+				<h2 class="screenReader">Favicons</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">favicon.ico</legend>
+						<p class="txt"><strong>Please Note:</strong> This is just a checklist, linking to a third party tool. It won't build the files for you.</p>
+						<fieldset class="spacer">
+							<legend class="assist">Favicon Formats</legend>
+							<ul class="form">
+								<li class="gap">	
+									<input type="checkbox" id="icon-ico" name="icon-ico">
+									<label class="info" for="icon-ico">Do you want to include a favicon.ico? (Old Browsers)</label>
+									<p class="txt"><strong>Note:</strong> Make sure you include sizes <strong>16×16</strong> and <strong>32×32</strong>. You will no longer need <strong>48×48</strong> or above.</p>
+								</li>
+								<li class="gap">	
+									<input type="checkbox" id="icon-touch" name="icon-touch">
+									<label class="info" for="icon-touch">Do you want to include an apple-touch-icon.png? (iOS)</label>
+									<p class="txt"><strong>Note:</strong> Make sure it's in <strong>PNG</strong> format, sized at <strong>180×180</strong> pixels and located in the base directory.</p>
+								</li>
+								<li class="gap">	
+									<input type="checkbox" id="icon-x512" name="icon-x512">
+									<label class="info" for="icon-x512">Do you want to include Chrome Manifest images? (Android)</label>
+									<p class="txt"><strong>Note:</strong> Provide two <strong>PNG</strong> images sized <strong>192×192</strong> and <strong>512×512</strong> for your site.webmanifest file.</p>
+								</li>
+								<li class="gap">	
+									<input type="checkbox" id="icon-tile" name="icon-tile">
+									<label class="info" for="icon-tile">Do you want to include a ms-tile.png? (IE 8-11)</label>
+									<p class="txt"><strong>Note:</strong> Create a single <strong>150×150</strong> pixel <strong>PNG</strong> image to be used as a tile in your BrowserConfig file.</p>
+								</li>
+								<li class="gap">	
+									<input type="checkbox" id="icon-svg" name="icon-svg">
+									<label class="info" for="icon-svg">Do you want to include a icon.svg? (New Browsers)</label>
+									<p class="txt"><strong>Note:</strong> Remember that you can enhance your <strong>SVG</strong> favicon with animation and effects.</p>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Favicon Banners</legend>
+							<ul class="form">
+								<li class="gap">	
+									<input type="checkbox" id="icon-splash" name="icon-splash">
+									<label class="info" for="icon-splash">Do you want to include a apple-splash.png? (iOS PWA's)</label>
+									<p class="txt"><strong>Note:</strong> When a PWA launches in full screen on iOS, this collection of images introduce your app.</p>
+								</li>
+								<li class="gap">	
+									<input type="checkbox" id="icon-banner" name="icon-banner">
+									<label class="info" for="icon-banner">Do you want to include a banner.png? (OpenGraph)</label>
+									<p class="txt"><strong>Note:</strong> To ensure compatibility with Facebook and Twitter, make your image <strong>1200×630</strong> pixels.</p>
+								</li>
+							</ul>
+						</fieldset>
+						<p class="txt"><strong>Please Note:</strong> The below link takes you to a generator that can produce every flavor of format you require. Rather than reproduce an open source tool to create various file formats, this works exceptionally well and is highly recommended.</p>
+						<ul class="book">
+							<li class="item"><a class="button flex" href="https://realfavicongenerator.net/">Visit</a></li>
+							<li class="item"><input class="btn" type="reset"></li>
+						</ul>
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="feed.xml">
+				<h2 class="screenReader">Feeds</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">feed.xml</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Syndication Format</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="radio" id="feed-itunes" name="feed" value="feed-itunes">
+									<label class="info" for="feed-itunes">Would you prefer to syndicate using iTunes feeds? (Podcasts)</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="feed-rss" name="feed" value="feed-rss" checked>
+									<label class="info" for="feed-rss">Would you prefer to syndicate using RSS feeds? (Popular)</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="feed-atom" name="feed" value="feed-atom">
+									<label class="info" for="feed-atom">Would you prefer to syndicate using Atom feeds? (Older)</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="feed-json" name="feed" value="feed-json">
+									<label class="info" for="feed-json">Would you prefer to syndicate using JSON feeds? (Newest)</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Optional Elements</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="feed-optional" name="feed" value="feed-optional">
+									<label class="info" for="feed-optional">Would you like to include all the optional features?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="feed-generate">Generate</button>
+						<button class="btn hide" type="button" id="feed-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="foaf.rdf">
+				<h2 class="screenReader">foaf.rdf</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">foaf.rdf</legend>
+						<fieldset class="spacer">
+							<legend class="assist">FOAF Type</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="radio" id="foaf-agent" name="foaf" value="agent">
+									<label class="info" for="foaf-agent">Is the owner of the website primarily an agent?</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="foaf-person" name="foaf" value="person" checked>
+									<label class="info" for="foaf-person">Is the owner of the website primarily a person?</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="foaf-organization" name="foaf" value="organization">
+									<label class="info" for="foaf-organization">Is the owner of the website primarily an organization?</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="foaf-group" name="foaf" value="group">
+									<label class="info" for="foaf-group">Is the owner of the website primarily a group?</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="foaf-project" name="foaf" value="project">
+									<label class="info" for="foaf-project">Is the owner of the website primarily a project?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">FOAF Properties</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="foaf-name" name="foaf-name" checked>
+									<label class="info" for="foaf-name">Do you want to include a name?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="foaf-homepage" name="foaf-homepage" checked>
+									<label class="info" for="foaf-homepage">Do you want to include a homepage?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="foaf-img" name="foaf-img" checked>
+									<label class="info" for="foaf-img">Do you want to include a image?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="foaf-email" name="foaf-email">
+									<label class="info" for="foaf-email">Do you want to include an email address?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="foaf-jabber" name="foaf-jabber">
+									<label class="info" for="foaf-jabber">Do you want to include a Jabber ID?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="foaf-based" name="foaf-based">
+									<label class="info" for="foaf-based">Do you want to include a location?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="foaf-made" name="foaf-made">
+									<label class="info" for="foaf-made">Do you want to include a project?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="foaf-account" name="foaf-account">
+									<label class="info" for="foaf-account">Do you want to include an account?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="foaf-category" name="foaf-category">
+									<label class="info" for="foaf-category">Do you want to include a category?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="foaf-age" name="foaf-age">
+									<label class="info" for="foaf-age">Do you want to include an age?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="foaf-relation" name="foaf-relation">
+									<label class="info" for="foaf-relation">Do you want to include a relationship?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="foaf-openid" name="foaf-openid">
+									<label class="info" for="foaf-openid">Do you want to include an OpenID?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="foaf-sha1" name="foaf-sha1">
+									<label class="info" for="foaf-sha1">Do you want to include a sha1 checksum?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Optional Elements</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="foaf-optional" name="feed" value="foaf-optional">
+									<label class="info" for="foaf-optional">Would you like to include all the optional properties?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="foaf-generate">Generate</button>
+						<button class="btn hide" type="button" id="foaf-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="geo.rdf">
+				<h2 class="screenReader">Geodata</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">geo.rdf</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Geodata Format</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="radio" id="geo-rdf" name="geo" value="geo-rdf" checked>
+									<label class="info" for="geo-rdf">Generate a Geodata file using the Semantic Web (RDF) format?</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="geo-kml" name="geo" value="geo-kml">
+									<label class="info" for="geo-kml">Generate a Geodata file using the Google Earth (KML) format?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="geo-generate">Generate</button>
+						<button class="btn hide" type="button" id="geo-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="humans.txt">
+				<h2 class="screenReader">humans.txt</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">humans.txt</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Team Properties</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="humans-team" name="humans-team" checked>
+									<label class="info" for="humans-team">Do you want to include a team member?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Credit Properties</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="humans-thanks" name="humans-thanks" checked>
+									<label class="info" for="humans-thanks">Do you want to include an individual credit?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="humans-license" name="humans-license" checked>
+									<label class="info" for="humans-license">Do you want to include a licence credit?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="humans-visitor" name="humans-visitor" checked>
+									<label class="info" for="humans-visitor">Do you want to include a visitor credit?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Site Properties</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="humans-languages" name="humans-languages" checked>
+									<label class="info" for="humans-languages">Do you want to include any languages?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="humans-standards" name="humans-standards" checked>
+									<label class="info" for="humans-standards">Do you want to include any standards?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="humans-components" name="humans-components" checked>
+									<label class="info" for="humans-components">Do you want to include any libraries?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="humans-software" name="humans-software" checked>
+									<label class="info" for="humans-software">Do you want to include any software?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="humans-services" name="humans-services" checked>
+									<label class="info" for="humans-services">Do you want to include any services?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="humans-support" name="humans-support" checked>
+									<label class="info" for="humans-support">Do you want to include device support?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="humans-updated" name="humans-updated" checked>
+									<label class="info" for="humans-updated">Do you want to include the date updated?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="humans-generate">Generate</button>
+						<button class="btn hide" type="button" id="humans-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="index.html">
+				<h2 class="screenReader">index.html</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">index.html</legend>
+						<button class="btn show" type="button" id="index-generate">Generate</button>
+						<button class="btn hide" type="button" id="index-download">Download</button>
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="legal.txt">
+				<h2 class="screenReader">legal.txt</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">legal.txt</legend>
+						<fieldset class="spacer">
+							<legend class="assist">License.txt</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="radio" id="legal-apache" name="legal" value="legal-apache">
+									<label class="info" for="legal-apache">Do you want to share improvements, but need some closed-souce code? (Apache 2.0)</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="legal-gpl3" name="legal" value="legal-gpl3">
+									<label class="info" for="legal-gpl3">Do you want to share improvements, including all future code? (GNU GPL v3)</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="legal-mit" name="legal" value="legal-mit" checked>
+									<label class="info" for="legal-mit">Do you want a simple and permissive license for your users? (MIT)</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="legal-cc" name="legal" value="legal-cc">
+									<label class="info" for="legal-cc">Do you want to license something other than code, like content? (Creative Commons)</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="legal-blueoak" name="legal" value="legal-blueoak">
+									<label class="info" for="legal-blueoak">Do you want a license that avoids patent and trademark liability? (Blue Oak)</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="legal-hippocratic" name="legal" value="legal-hippocratic">
+									<label class="info" for="legal-hippocratic">Do you want a license that prevents use that may harm individuals? (Hippocratic)</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Other Files</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="legal-tos" name="legal-tos" checked>
+									<label class="info" for="legal-tos">Do you want a link to a boilerplate terms of service agreement template?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="legal-impressum" name="legal-impressum" checked>
+									<label class="info" for="legal-impressum">Do you want a link to an article detailing how to create an impressum?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="legal-a11y" name="legal-a11y" checked>
+									<label class="info" for="legal-a11y">Do you want a link to an article showing how to create an accessibiliy statement?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="legal-privacy" name="legal-privacy" checked>
+									<label class="info" for="legal-privacy">Do you want a link to a privacy policy generator and GDPR checklist?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="legal-generate">Generate</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="list.opml">
+				<h2 class="screenReader">list.opml</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">list.opml</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Subscription</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="radio" id="list-music" name="list" value="list-music">
+									<label class="info" for="list-music">Would you prefer to create a music subscription list?</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="list-links" name="list" value="list-links" checked>
+									<label class="info" for="list-links">Would you prefer to create a URL subscription list?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Head Extras</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="list-owner" name="list" value="list-owner">
+									<label class="info" for="list-owner">Do you want to include information about the creator?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="list-date" name="list" value="list-date">
+									<label class="info" for="list-date">Do you want to include creation and modification dates?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="list-docs" name="list" value="list-docs">
+									<label class="info" for="list-docs">Do you want to include a link to the OPML specification?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="list-state" name="list" value="list-state">
+									<label class="info" for="list-state">Do you want to include line number state information?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="list-window" name="list" value="list-window">
+									<label class="info" for="list-window">Do you want to include pixel location window details?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="list-generate">Generate</button>
+						<button class="btn hide" type="button" id="list-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="modes.css">
+				<h2 class="screenReader">modes.css</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">modes.css</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Media Queries</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="modes-invert" name="modes-invert">
+									<label class="info" for="modes-invert">Do you want to include an inverted colors media query?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="modes-light" name="modes-light">
+									<label class="info" for="modes-light">Do you want to include a light level media query?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="modes-pixel" name="modes-pixel">
+									<label class="info" for="modes-pixel">Do you want to include a pixel density media query?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="modes-monochrome" name="modes-monochrome">
+									<label class="info" for="modes-monochrome">Do you want to include a monochrome media query?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="modes-pointer" name="modes-pointer" checked>
+									<label class="info" for="modes-pointer">Do you want to include a pointer (touchscreen) media query?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="modes-dark" name="modes-dark" checked>
+									<label class="info" for="modes-dark">Do you want to include a dark mode media query?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="modes-motion" name="modes-motion" checked>
+									<label class="info" for="modes-motion">Do you want to include a reduced motion media query?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Experimental</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="modes-contrast" name="modes-contrast">
+									<label class="info" for="modes-contrast">Do you want to include a high contrast media query?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="modes-data" name="modes-data" checked>
+									<label class="info" for="modes-data">Do you want to include a reduced data media query?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="modes-transparency" name="modes-transparency">
+									<label class="info" for="modes-transparency">Do you want to include a reduced transparency media query?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="modes-fold" name="modes-fold" checked>
+									<label class="info" for="modes-fold">Do you want to include a foldable screen media query?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Boilerplate</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="modes-boilerplate" name="modes-boilerplate">
+									<label class="info" for="modes-boilerplate">Include boilerplate code for available media queries?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="modes-generate">Generate</button>
+						<button class="btn hide" type="button" id="modes-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="opensearch.xml">
+				<h2 class="screenReader">opensearch.xml</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">opensearch.xml</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Basics</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="opensearch-google" name="opensearch-google">
+									<label class="info" for="opensearch-google">Do you want to use Google as your Search engine?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Elements</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="opensearch-adult" name="opensearch-adult">
+									<label class="info" for="opensearch-adult">Do you want to include adult only content?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="opensearch-copyright" name="opensearch-copyright">
+									<label class="info" for="opensearch-copyright">Do you want to include a copyright notice?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="opensearch-contact" name="opensearch-contact">
+									<label class="info" for="opensearch-contact">Do you want to include a contact email address?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="opensearch-name" name="opensearch-name">
+									<label class="info" for="opensearch-name">Do you want to include a name of who created the file?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="opensearch-icon" name="opensearch-icon">
+									<label class="info" for="opensearch-icon">Do you want to include an icon of your digital brand?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="opensearch-input" name="opensearch-input">
+									<label class="info" for="opensearch-input">Do you want to include encoding your search supports?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="opensearch-language" name="opensearch-language">
+									<label class="info" for="opensearch-language">Do you want to include a language you can search using?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="opensearch-longtitle" name="opensearch-longtitle">
+									<label class="info" for="opensearch-longtitle">Do you want to include a 48 character longer title?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="opensearch-output" name="opensearch-output">
+									<label class="info" for="opensearch-output">Do you want to include encoding your results support?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="opensearch-query" name="opensearch-query">
+									<label class="info" for="opensearch-query">Do you want to include a query that can be performed?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="opensearch-syndicate" name="opensearch-syndicate">
+									<label class="info" for="opensearch-syndicate">Do you want to include syndication rights for results?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="opensearch-tags" name="opensearch-tags">
+									<label class="info" for="opensearch-tags">Do you want to include a set of tags to identify results?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="opensearch-generate">Generate</button>
+						<button class="btn hide" type="button" id="opensearch-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="p3p.xml">
+				<h2 class="screenReader">p3p.xml</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">p3p.xml</legend>
+						<button class="btn show" type="button" id="p3p-generate">Generate</button>
+						<button class="btn hide" type="button" id="p3p-download">Download</button>
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="powder.xml">
+				<h2 class="screenReader">powder.xml</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">powder.xml</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Basics</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="radio" id="powder-xml" name="powder" value="powder-xml" checked>
+									<label class="info" for="powder-xml">Generate a Powder file with ICRA (latest version) content labels?</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="powder-rdf" name="powder" value="powder-rdf">
+									<label class="info" for="powder-rdf">Generate a PICS file with ICRA, RSAC, SafeSurf and Weburbia labels?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">ICRA Label</legend>
+							<ul class="form">
+								<li class="gap">
+									<select class="select txt" name="icra-nudity" id="icra-nudity">
+										<option value="nz>1" selected>No nudity</option>
+										<option value="nz>0">Nudity may be, but is not known to be, present</option>
+										<option value="na>1">Exposed breasts</option>
+										<option value="nb>1">Bare buttocks</option>
+										<option value="nc>1">Visible genitals</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="icra-sexual" id="icra-sexual">
+										<option value="sz>1" selected>No sexual material</option>
+										<option value="sz>0">Sexual material may be, but is not known to be, present</option>
+										<option value="sa>1">Passionate kissing</option>
+										<option value="sb>1">Obscured or implied sexual acts</option>
+										<option value="sc>1">Visible sexual touching</option>
+										<option value="sd>1">Explicit sexual language</option>
+										<option value="se>1">Erections/explicit sexual acts</option>
+										<option value="sf>1">Erotica</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="icra-violence" id="icra-violence">
+										<option value="vz>1" selected>No violence</option>
+										<option value="vz>0">Violence may be, but is not known to be, present</option>
+										<option value="va>1">Assault/rape</option>
+										<option value="vb>1">Injury to human beings</option>
+										<option value="vc>1">Injury to animals</option>
+										<option value="vd>1">Injury to fantasy characters (including animation)</option>
+										<option value="ve>1">Blood and dismemberment, human beings</option>
+										<option value="vf>1">Blood and dismemberment, animals</option>
+										<option value="vg>1">Blood and dismemberment, fantasy characters (including animation)</option>
+										<option value="vh>1">Torture or killing of human beings</option>
+										<option value="vi>1">Torture or killing of animals</option>
+										<option value="vj>1">Torture or killing of fantasy characters (including animation)</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="icra-language" id="icra-language">
+										<option value="lz>1" selected>No potentially offensive language</option>
+										<option value="lz>0">Potentially offensive language may be, but is not known to be, present</option>
+										<option value="la>1">Abusive or vulgar terms</option>
+										<option value="lb>1">Profanity or swearing</option>
+										<option value="lc>1">Mild expletives</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="icra-harmful" id="icra-harmful">
+										<option value="oz>1" selected>No potentially harmful activities</option>
+										<option value="oz>0">Potentially harmful activities may be, but are not known to be, depicted</option>
+										<option value="oa>1">Depiction of tobacco use</option>
+										<option value="ob>1">Depiction of alcohol use</option>
+										<option value="oc>1">Depiction of drug use</option>
+										<option value="od>1">Depiction of the use of weapons</option>
+										<option value="oe>1">Gambling</option>
+										<option value="of>1">Content that sets a bad example for young children</option>
+										<option value="og>1">Content that creates fear, intimidation, horror, or psychological terror</option>
+										<option value="oh>1">Incitement or depiction of discrimination or harm</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="icra-user" id="icra-user">
+										<option value="cz>1" selected>No user-generated content</option>
+										<option value="cz>0">User generated content may be, but is not known to be, present</option>
+										<option value="ca>1">User-generated content such as message boards (moderated)</option>
+										<option value="cb>1">User-generated content such as message boards (unmoderated)</option>
+									</select>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">RSAC Label</legend>
+							<ul class="form">
+								<li class="gap">
+									<select class="select txt" name="rsac-nudity" id="rsac-nudity">
+										<option value="n>0" selected>No nudity</option>
+										<option value="n>1">Limited nudity</option>
+										<option value="n>2">Some nudity</option>
+										<option value="n>3">Unrestricted nudity</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="rsac-sexual" id="rsac-sexual">
+										<option value="s>0" selected>No sexual material</option>
+										<option value="s>1">Limited sexual material</option>
+										<option value="s>2">Some sexual material</option>
+										<option value="s>3">Unrestricted sexual material</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="rsac-violence" id="rsac-violence">
+										<option value="v>0" selected>No violence</option>
+										<option value="v>1">Limited violence</option>
+										<option value="v>2">Some violence</option>
+										<option value="v>3">Unrestricted violence</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="rsac-language" id="rsac-language">
+										<option value="l>0" selected>No offensive language</option>
+										<option value="l>1">Limited offensive language</option>
+										<option value="l>2">Some offensive language</option>
+										<option value="l>3">Unrestricted offensive language</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="rsac-tobacco" id="rsac-tobacco">
+										<option value="oa>0" selected>No depiction of tobacco use</option>
+										<option value="oa>1">Limited depiction of tobacco use</option>
+										<option value="oa>2">Unrestricted depiction of tobacco use</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="rsac-alcohol" id="rsac-alcohol">
+										<option value="ob>0" selected>No depiction of alcohol use</option>
+										<option value="ob>1">Limited depiction of alcohol use</option>
+										<option value="ob>2">Unrestricted depiction of alcohol use</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="rsac-drug" id="rsac-drug">
+										<option value="oc>0" selected>No depiction of drug use</option>
+										<option value="oc>1">Limited depiction of drug use</option>
+										<option value="oc>2">Unrestricted depiction of drug use</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="rsac-weapon" id="rsac-weapon">
+										<option value="od>0" selected>No depiction of weapon use</option>
+										<option value="od>1">Limited depiction of weapon use</option>
+										<option value="od>2">Unrestricted depiction of weapon use</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="rsac-gambling" id="rsac-gambling">
+										<option value="oe>0" selected>No depiction of gambling use</option>
+										<option value="oe>1">Limited depiction of gambling use</option>
+										<option value="oe>2">Unrestricted depiction of gambling use</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="rsac-example" id="rsac-example">
+										<option value="of>0" selected>No content that sets a bad example for young children</option>
+										<option value="of>1">Limited content that sets a bad example for young children</option>
+										<option value="of>2">Unrestricted content that sets a bad example for young children</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="rsac-scary" id="rsac-scary">
+										<option value="og>0" selected>No content that creates fear, intimidation, horror or terror</option>
+										<option value="og>1">Limited content that creates fear, intimidation, horror or terror</option>
+										<option value="og>2">Unrestricted content that creates fear, intimidation, horror or terror</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="rsac-discrimination" id="rsac-discrimination">
+										<option value="oh>0" selected>No incitement or depiction of discrimination or harm</option>
+										<option value="oh>1">Limited incitement or depiction of discrimination or harm</option>
+										<option value="oh>2">Unrestricted incitement or depiction of discrimination or harm</option>
+									</select>
+								</li>
+								<li class="gap">
+									<select class="select txt" name="rsac-user" id="rsac-user">
+										<option value="c>0" selected>No user-generated content</option>
+										<option value="c>1">Limited user-generated content</option>
+										<option value="c>2">Some user-generated content</option>
+										<option value="c>3">Unrestricted user-generated content</option>
+									</select>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">SafeSurf Label</legend>
+							<ul class="form">
+								<li class="gap">
+									<label class="info" for="ss-age">Age:</label>
+									<select class="select txt" name="ss-age" id="ss-age">
+										<option value="000>1" selected>All Ages</option>
+										<option value="000>2">Older Children</option>
+										<option value="000>3">Teens</option>
+										<option value="000>4">Older Teens</option>
+										<option value="000>5">Adult Supervision Recommended</option>
+										<option value="000>6">Adults</option>
+										<option value="000>7">Limited to Adults</option>
+										<option value="000>8">Adults Only</option>
+										<option value="000>9">Explicitly for Adults</option>
+									</select>
+								</li>
+								<li class="gap">
+									<label class="info" for="ss-profanity">Profanity:</label>
+									<select class="select txt" name="ss-profanity" id="ss-profanity">
+										<option value="001>1" selected>Subtle Innuendo</option>
+										<option value="001>2">Explicit Innuendo</option>
+										<option value="001>3">Technical Reference</option>
+										<option value="001>4">Non-Graphic (Artistic)</option>
+										<option value="001>5">Graphic (Artistic)</option>
+										<option value="001>6">Graphic</option>
+										<option value="001>7">Detailed (Graphic)</option>
+										<option value="001>8">Explicit Vulgarity</option>
+										<option value="001>9">Explicit and Crude</option>
+									</select>
+								</li>
+								<li class="gap">
+									<label class="info" for="ss-sexual">Sexual:</label>
+									<select class="select txt" name="ss-sexual" id="ss-sexual">
+										<option value="002>1" selected>Subtle Innuendo</option>
+										<option value="002>2">Explicit Innuendo</option>
+										<option value="002>3">Technical Reference</option>
+										<option value="002>4">Non-Graphic (Artistic)</option>
+										<option value="002>5">Graphic (Artistic)</option>
+										<option value="002>6">Graphic</option>
+										<option value="002>7">Detailed (Graphic)</option>
+										<option value="002>8">Explicitly Graphic or Inviting Participation</option>
+										<option value="002>9">Explicit and Crude or Explicitly Inviting Participation</option>
+									</select>
+								</li>
+								<li class="gap">
+									<label class="info" for="ss-nudity">Nudity:</label>
+									<select class="select txt" name="ss-nudity" id="ss-nudity">
+										<option value="004>1" selected>Subtle Innuendo</option>
+										<option value="004>2">Explicit Innuendo</option>
+										<option value="004>3">Technical Reference</option>
+										<option value="004>4">Non-Graphic (Artistic)</option>
+										<option value="004>5">Graphic (Artistic)</option>
+										<option value="004>6">Graphic</option>
+										<option value="004>7">Detailed (Graphic)</option>
+										<option value="004>8">Explicit Vulgarity</option>
+										<option value="004>9">Explicit and Crude</option>
+									</select>
+								</li>
+								<li class="gap">
+									<label class="info" for="ss-violence">Violence:</label>
+									<select class="select txt" name="ss-violence" id="ss-violence">
+										<option value="005>1" selected>Subtle Innuendo</option>
+										<option value="005>2">Explicit Innuendo</option>
+										<option value="005>3">Technical Reference</option>
+										<option value="005>4">Non-Graphic (Artistic)</option>
+										<option value="005>5">Graphic (Artistic)</option>
+										<option value="005>6">Graphic</option>
+										<option value="005>7">Detailed (Graphic)</option>
+										<option value="005>8">Inviting Participation in Graphic Interactive Format</option>
+										<option value="005>9">Encouraging Personal Participation, Weapon Making</option>
+									</select>
+								</li>
+								<li class="gap">
+									<label class="info" for="ss-intolerance">Intolerance:</label>
+									<select class="select txt" name="ss-intolerance" id="ss-intolerance">
+										<option value="007>1" selected>Subtle Innuendo</option>
+										<option value="007>2">Explicit Innuendo</option>
+										<option value="007>3">Technical Reference</option>
+										<option value="007>4">Non-Graphic (Literary)</option>
+										<option value="007>5">Graphic (Literary)</option>
+										<option value="007>6">Graphic Discussions</option>
+										<option value="007>7">Endorsing Hatred</option>
+										<option value="007>8">Endorsing Violent or Hateful Action</option>
+										<option value="007>9">Advocating Violent or Hateful Action</option>
+									</select>
+								</li>
+								<li class="gap">
+									<label class="info" for="ss-drugs">Drugs:</label>
+									<select class="select txt" name="ss-drugs" id="ss-drugs">
+										<option value="008>1" selected>Subtle Innuendo</option>
+										<option value="008>2">Explicit Innuendo</option>
+										<option value="008>3">Technical Reference</option>
+										<option value="008>4">Non-Graphic (Artistic)</option>
+										<option value="008>5">Graphic (Artistic)</option>
+										<option value="008>6">Graphic</option>
+										<option value="008>7">Detailed (Graphic)</option>
+										<option value="008>8">Simulated Interactive Participation</option>
+										<option value="008>9">Soliciting Personal Participation</option>
+									</select>
+								</li>
+								<li class="gap">
+									<label class="info" for="ss-adult">Adult:</label>
+									<select class="select txt" name="ss-adult" id="ss-adult">
+										<option value="009>1" selected>Subtle Innuendo</option>
+										<option value="009>2">Explicit Innuendo</option>
+										<option value="009>3">Technical Reference</option>
+										<option value="009>4">Non-Graphic (Artistic)</option>
+										<option value="009>5">Graphic (Artistic)</option>
+										<option value="009>6">Graphic</option>
+										<option value="009>7">Detailed (Graphic)</option>
+										<option value="009>8">Explicit Vulgarity</option>
+										<option value="009>9">Explicit and Crude</option>
+									</select>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Weburbia Label</legend>
+							<ul class="form">
+								<li class="gap">
+									<select class="select txt" name="w-rating" id="w-rating">
+										<option value="S>0" selected>Safe For Kids</option>
+										<option value="S>1">Parental Guidance</option>
+										<option value="S>2">Adults Only</option>
+									</select>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="powder-generate">Generate</button>
+						<button class="btn hide" type="button" id="powder-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="print.css">
+				<h2 class="screenReader">print.css</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">print.css</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Styles</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="print-reset" name="print-reset" checked>
+									<label class="info" for="print-reset">Do you want to include a CSS Reset?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="print-minimal" name="print-minimal">
+									<label class="info" for="print-minimal">Do you want to include a minimal theme?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="print-url" name="print-url">
+									<label class="info" for="print-url">Do you want to include a URL decoder?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="print-cover" name="print-cover">
+									<label class="info" for="print-cover">Do you want to include a cover page?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="print-hide" name="print-hide" checked>
+									<label class="info" for="print-hide">Do you want to include a content hider?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="print-dark" name="print-dark">
+									<label class="info" for="print-dark">Do you want to include a dark paper tool?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="print-filter" name="print-filter">
+									<label class="info" for="print-filter">Do you want to include image filters?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="print-img" name="print-img">
+									<label class="info" for="print-img">Do you want to include a image only toolkit?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="print-break" name="print-break">
+									<label class="info" for="print-break">Do you want to include a page break?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="print-paper" name="print-paper">
+									<label class="info" for="print-paper">Do you want to include various paper sizes?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="print-column" name="print-column">
+									<label class="info" for="print-column">Do you want to include multi-column overflow?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="print-chrome" name="print-chrome">
+									<label class="info" for="print-chrome">Do you want to include mono and color support?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="print-generate">Generate</button>
+						<button class="btn hide" type="button" id="print-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="readme">
+				<h2 class="screenReader">README</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">README</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Sections</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="readme-overview" name="readme-overview" checked>
+									<label class="info" for="readme-overview">Do you want to include an overview section?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="readme-usage" name="readme-usage" checked>
+									<label class="info" for="readme-usage">Do you want to include a usage section?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="readme-installation" name="readme-installation" checked>
+									<label class="info" for="readme-installation">Do you want to include an installation section?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="readme-support" name="readme-support" checked>
+									<label class="info" for="readme-support">Do you want to include a support section?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="readme-generate">Generate</button>
+						<button class="btn hide" type="button" id="readme-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="robots.txt">
+				<h2 class="screenReader">robots.txt</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">robots.txt</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Standard</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="robots-agent" name="robots-agent" checked>
+									<label class="info" for="robots-agent">Do you want to include a User Agent?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="robots-disallow" name="robots-disallow" checked>
+									<label class="info" for="robots-disallow">Do you want to include a Disallow folder?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="robots-allow" name="robots-allow">
+									<label class="info" for="robots-allow">Do you want to include an Allow directory?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="robots-sitemap" name="robots-sitemap" checked>
+									<label class="info" for="robots-sitemap">Do you want to include a Sitemap property?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Extensions</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="robots-comment" name="robots-comment">
+									<label class="info" for="robots-comment">Do you want to include a spider Comment?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="robots-request" name="robots-request">
+									<label class="info" for="robots-request">Do you want to include a Request Rate?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="robots-version" name="robots-version">
+									<label class="info" for="robots-version">Do you want to include a Robot Version?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="robots-visit" name="robots-visit">
+									<label class="info" for="robots-visit">Do you want to include a Visit Time?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="robots-generate">Generate</button>
+						<button class="btn hide" type="button" id="robots-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="security.txt">
+				<h2 class="screenReader">security.txt</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">security.txt</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Security File</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="radio" id="security-txt" name="security" value="security-txt" checked>
+									<label class="info" for="security-txt">Generate a security.txt file for the .well-known directory?</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="security-dnt" name="security" value="security-dnt">
+									<label class="info" for="security-dnt">Generate a dnt-policy.txt file for the .well-known directory?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Security.txt</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="security-acknowledgments" name="security-acknowledgments">
+									<label class="info" for="security-acknowledgments">Do you want to include Acknowledgments?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="security-canonical" name="security-canonical">
+									<label class="info" for="security-canonical">Do you want to include a Canonical link?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="security-encryption" name="security-encryption">
+									<label class="info" for="security-encryption">Do you want to include an Encryption key?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="security-hiring" name="security-hiring">
+									<label class="info" for="security-hiring">Do you want to include a Hiring page?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="security-policy" name="security-policy">
+									<label class="info" for="security-policy">Do you want to include a Policy page?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="security-lang" name="security-lang">
+									<label class="info" for="security-lang">Do you want to include Preferred Languages?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="security-pgp" name="security-pgp">
+									<label class="info" for="security-pgp">Do you want to include a PGP signature?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="security-generate">Generate</button>
+						<button class="btn hide" type="button" id="security-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="site.webmanifest">
+				<h2 class="screenReader">site.webmanifest</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">site.webmanifest</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Wrapper</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="radio" id="webmanifest-json" name="webmanifest" value="webmanifest-json" checked>
+									<label class="info" for="webmanifest-json">Generate a site.webmanifest file for handheld devices?</label>
+								</li>
+								<li class="gap">
+									<input type="radio" id="webmanifest-xml" name="webmanifest" value="webmanifest-xml">
+									<label class="info" for="webmanifest-xml">Generate a browserconfig.xml file for Internet Explorer?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">manifest.json</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="webmanifest-color" name="webmanifest-color" checked>
+									<label class="info" for="webmanifest-color">Do you want to include Color information?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="webmanifest-description" name="webmanifest-description" checked>
+									<label class="info" for="webmanifest-description">Do you want to include a Description?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="webmanifest-display" name="webmanifest-display" checked>
+									<label class="info" for="webmanifest-display">Do you want to include a custom Display mode?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="webmanifest-related" name="webmanifest-related">
+									<label class="info" for="webmanifest-related">Do you want to include a Related apps list?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="webmanifest-scope" name="webmanifest-scope">
+									<label class="info" for="webmanifest-scope">Do you want to include a Scope website link?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="webmanifest-screenshots" name="webmanifest-screenshots">
+									<label class="info" for="webmanifest-screenshots">Do you want to include a Screenshots list?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="webmanifest-shortcuts" name="webmanifest-shortcuts">
+									<label class="info" for="webmanifest-shortcuts">Do you want to include a Shortcuts list?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="webmanifest-generate">Generate</button>
+						<button class="btn hide" type="button" id="webmanifest-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="sitemap.xml">
+				<h2 class="screenReader">sitemap.xml</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">sitemap.xml</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Elements</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="sitemap-date" name="sitemap-date" checked>
+									<label class="info" for="sitemap-date">Do you want to include a Modification Date?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="sitemap-change" name="sitemap-change" checked>
+									<label class="info" for="sitemap-change">Do you want to include a Frequency Change?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="sitemap-priority" name="sitemap-priority" checked>
+									<label class="info" for="sitemap-priority">Do you want to include a Priority value?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Index</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="sitemap-multi" name="sitemap-multi">
+									<label class="info" for="sitemap-multi">Do you want to include Multiple Sitmaps?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="sitemap-generate">Generate</button>
+						<button class="btn hide" type="button" id="sitemap-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="style.css">
+				<h2 class="screenReader">style.css</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">style.css</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Features</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="style-bp" name="style-bp" checked>
+									<label class="info" for="style-bp">Do you want to include the Boilerplate extras?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="style-generate">Generate</button>
+						<button class="btn hide" type="button" id="style-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="subtitles.vtt">
+				<h2 class="screenReader">subtitles.vtt</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">subtitles.vtt</legend>
+						<fieldset class="spacer">
+							<legend class="assist">VTT Record</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="subtitles-record" name="subtitles-record" checked>
+									<label class="info" for="subtitles-record">Do you want to include a subtitles record?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">VTT Extensions</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="subtitles-style" name="subtitles-style">
+									<label class="info" for="subtitles-style">Do you want to include a subtitle style?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="subtitles-comments" name="subtitles-comments">
+									<label class="info" for="subtitles-comments">Do you want to include subtitle comments?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="subtitles-settings" name="subtitles-settings">
+									<label class="info" for="subtitles-settings">Do you want to include subtitle settings?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="subtitles-generate">Generate</button>
+						<button class="btn hide" type="button" id="subtitles-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="sw.js">
+				<h2 class="screenReader">sw.js</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">sw.js</legend>
+						<button class="btn show" type="button" id="sw-generate">Generate</button>
+						<button class="btn hide" type="button" id="sw-download">Download</button>
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="vcard.vcf">
+				<h2 class="screenReader">vcard.vcf</h2>
+				<form class="format">
+					<fieldset class="spacer">
+						<legend class="assist">vcard.vcf</legend>
+						<fieldset class="spacer">
+							<legend class="assist">Contact Properties</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="vcard-name" name="vcard-name" checked>
+									<label class="info" for="vcard-name">Do you want to include a contact Name?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="vcard-date" name="vcard-date" checked>
+									<label class="info" for="vcard-date">Do you want to include Date information?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="vcard-phone" name="vcard-phone">
+									<label class="info" for="vcard-phone">Do you want to include Phone contacts?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="vcard-email" name="vcard-email" checked>
+									<label class="info" for="vcard-email">Do you want to include Email contacts?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="vcard-website" name="vcard-website" checked>
+									<label class="info" for="vcard-website">Do you want to include a Website address?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="vcard-social" name="vcard-social" checked>
+									<label class="info" for="vcard-social">Do you want to include Social Media profiles?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="vcard-location" name="vcard-location">
+									<label class="info" for="vcard-location">Do you want to include Location information?</label>
+								</li>
+								<li class="gap">
+									<input type="checkbox" id="vcard-photo" name="vcard-photo">
+									<label class="info" for="vcard-photo">Do you want to include a contact Photo?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="spacer">
+							<legend class="assist">Optional Properties</legend>
+							<ul class="form">
+								<li class="gap">
+									<input type="checkbox" id="vcard-optional" name="vcard-optional">
+									<label class="info" for="vcard-optional">Do you want to include the optional properties?</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="btn" type="button" id="vcard-generate">Generate</button>
+						<button class="btn hide" type="button" id="vcard-download">Download</button>
+						<input class="btn" type="reset">
+					</fieldset>
+				</form>
+			</article>
+			<article class="page" id="download">
+				<h2 class="screenReader">Download</h2>
+				<p class="subview">Below you can download the complete book in a format of your choosing to read offline. If you have any comments, or spot any errors or omissions, feel free to <a class="link" href="mailto:support@hitechy.com?subject=AssetConfig">contact me</a>. If you would like to discuss tiny assets within your organisation (or beyond), I've <a class="link" href="cache/files/talk.pdf">prepared a talk</a> on the subject.</p>
+				<div class="group">
+					<a class="download" href="cache/files/ebook.pdf">
+						<ul class="dl">
+							<li class="pdf">Download (7.3MB)</li>
+							<li class="pdf">284 Pages (PDF)</li>
+						</ul>
+					</a>
+					<a class="download" href="cache/files/ebook.epub">
+						<ul class="dl">
+							<li class="pdf">Download (5.9MB)</li>
+							<li class="pdf">284 Pages (ePub)</li>
+						</ul>
+					</a>
+				</div>
+			</article>
+			<article class="about" id="about">
+				<h2 class="screenReader">About</h2>
+				<p class="subview">Supporting over 30 formats and many further compatible standards, this is the most comprehensive tool of it's kind. Each wizard in the toolbox will generate the file you need easily (and it's all done on your machine, as these tools are privacy focused).</p>
+				<p class="subview">Best of all, if you want to detach yourself from the toolchain entirely and compile the files yourself, I've written a comprehensive book on the subject which goes behind the scenes on every format thats included here and how to render them performantly.</p>
+			</article>
+		</main>
+		<footer class="footer">
+			<p class="copyright">Copyright, <span class="year">2023</span></p>
+			<p class="build">Built by <a class="link" href="https://alexanderdawson.com">Alex Dawson</a>.</p>
+		</footer>
+	</body>
+</html>
