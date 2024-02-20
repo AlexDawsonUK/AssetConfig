@@ -11,16 +11,16 @@ function download(filename, encode, text) {
 (function head(){
 	let button = document.getElementById('head-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('head').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('head').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading Head.'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('head').children[0].childElementCount == 1) {
-			document.getElementById('head').children[0].appendChild(fieldset);
-			document.getElementById('head').children[0].children[1].appendChild(legend);
+		if (document.getElementById('head').children[1].childElementCount == 1) {
+			document.getElementById('head').children[1].appendChild(fieldset);
+			document.getElementById('head').children[1].children[1].appendChild(legend);
 			var tag = ['charset','head-viewport',
 			'head-csp','head-content','head-default','head-ie6', 'head-refresh','head-target','head-dns','head-iex',
 			'head-title','head-desc','head-base','head-style1','head-style2','head-style3','head-script1','head-script2',
@@ -302,7 +302,7 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('head').children[0].children[1].appendChild(p); }
+					document.getElementById('head').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('head-download').classList.replace('hide','show'); }
 		return false; }, false);
@@ -311,9 +311,9 @@ function download(filename, encode, text) {
 		var header =	'<!DOCTYPE html>' + '\n' +
 						'<html lang="en">' + '\n' +
 						'	<head>' + '\n';
-		var meta = ""; var arr = document.getElementById('head').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('head').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + '		' + document.getElementById('head').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + '		' + document.getElementById('head').children[1].children[1].children[i].innerText + '\n'; }
 		var body =		'	</head>' + '\n' +
 						'	<body>' + '\n';
 		var footer =	'	</body>' + '\n' +
@@ -324,16 +324,16 @@ function download(filename, encode, text) {
 (function htaccess(){
 	let button = document.getElementById('hta-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('.htaccess').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('.htaccess').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading .htaccess'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('.htaccess').children[0].childElementCount == 1) {
-			document.getElementById('.htaccess').children[0].appendChild(fieldset);
-			document.getElementById('.htaccess').children[0].children[1].appendChild(legend);
+		if (document.getElementById('.htaccess').children[1].childElementCount == 1) {
+			document.getElementById('.htaccess').children[1].appendChild(fieldset);
+			document.getElementById('.htaccess').children[1].children[1].appendChild(legend);
 			var tag = ['hta', 'hta-corimg','hta-corttf','hta-corall','hta-corsub','hta-cortiming',
 			'hta-ie','hta-encode','hta-mime',
 			'hta-noerr','hta-404','hta-301','hta-https','hta-nwww','hta-ywww','hta-ver',
@@ -871,15 +871,15 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('.htaccess').children[0].children[1].appendChild(p); }
+					document.getElementById('.htaccess').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('hta-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('hta-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('.htaccess').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('.htaccess').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('.htaccess').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('.htaccess').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('.htaccess', 'application/octet-stream', meta );
 	},false);
@@ -887,16 +887,16 @@ function download(filename, encode, text) {
 (function adstxt(){
 	let button = document.getElementById('ads-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('ads.txt').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('ads.txt').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading ads.txt'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('ads.txt').children[0].childElementCount == 1) {
-			document.getElementById('ads.txt').children[0].appendChild(fieldset);
-			document.getElementById('ads.txt').children[0].children[1].appendChild(legend);
+		if (document.getElementById('ads.txt').children[1].childElementCount == 1) {
+			document.getElementById('ads.txt').children[1].appendChild(fieldset);
+			document.getElementById('ads.txt').children[1].children[1].appendChild(legend);
 			var tag = ['ads','ads-record','ads-sub','ads-contact'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -914,15 +914,15 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('ads.txt').children[0].children[1].appendChild(p); }
+					document.getElementById('ads.txt').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('ads-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('ads-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('ads.txt').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('ads.txt').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('ads.txt').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('ads.txt').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('ads.txt', 'text/plain', meta );
 	},false);
@@ -930,16 +930,16 @@ function download(filename, encode, text) {
 (function carbontxt(){
 	let button = document.getElementById('carbon-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('carbon.txt').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('carbon.txt').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading carbon.txt'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('carbon.txt').children[0].childElementCount == 1) {
-			document.getElementById('carbon.txt').children[0].appendChild(fieldset);
-			document.getElementById('carbon.txt').children[0].children[1].appendChild(legend);
+		if (document.getElementById('carbon.txt').children[1].childElementCount == 1) {
+			document.getElementById('carbon.txt').children[1].appendChild(fieldset);
+			document.getElementById('carbon.txt').children[1].children[1].appendChild(legend);
 			var tag = ['carbon','carbon-record','carbon-details'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -959,15 +959,15 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('carbon.txt').children[0].children[1].appendChild(p); }
+					document.getElementById('carbon.txt').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('carbon-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('carbon-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('carbon.txt').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('carbon.txt').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('carbon.txt').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('carbon.txt').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('carbon.txt', 'text/plain', meta );
 	},false);
@@ -975,16 +975,16 @@ function download(filename, encode, text) {
 (function changelog(){
 	let button = document.getElementById('change-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('change.log').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('change.log').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading change.log'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('change.log').children[0].childElementCount == 1) {
-			document.getElementById('change.log').children[0].appendChild(fieldset);
-			document.getElementById('change.log').children[0].children[1].appendChild(legend);
+		if (document.getElementById('change.log').children[1].childElementCount == 1) {
+			document.getElementById('change.log').children[1].appendChild(fieldset);
+			document.getElementById('change.log').children[1].children[1].appendChild(legend);
 			var tag = ['change','change-unrel','change2',
 			'change-add','change-changelog','change-dessys','change-hta','change-html','change-img','change-css','change-xfont','change-gfont','change-license','change-humans','change-security','change-ads','change-robots','change-favicon','change-pwa','change-event','change-vcard','change-rss','change-dcmi','change-sitemap','change-opensearch','change-subtitles','change-carbon','change-dnt','change-pics','change-js',
 			'change-cha','change-dep','change-rem','change-fix','change-sec','change-guide'];
@@ -1093,15 +1093,15 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('change.log').children[0].children[1].appendChild(p); }
+					document.getElementById('change.log').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('change-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('change-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('change.log').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('change.log').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('change.log').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('change.log').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('change.log', 'text/plain', meta );
 	},false);
@@ -1109,16 +1109,16 @@ function download(filename, encode, text) {
 (function clientaccesspolicyxml(){
 	let button = document.getElementById('clientaccesspolicy-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('clientaccesspolicy.xml').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('clientaccesspolicy.xml').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading clientaccesspolicy.xml'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('clientaccesspolicy.xml').children[0].childElementCount == 1) {
-			document.getElementById('clientaccesspolicy.xml').children[0].appendChild(fieldset);
-			document.getElementById('clientaccesspolicy.xml').children[0].children[1].appendChild(legend);
+		if (document.getElementById('clientaccesspolicy.xml').children[1].childElementCount == 1) {
+			document.getElementById('clientaccesspolicy.xml').children[1].appendChild(fieldset);
+			document.getElementById('clientaccesspolicy.xml').children[1].children[1].appendChild(legend);
 			var tag = ['clientaccesspolicy'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -1152,16 +1152,16 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('clientaccesspolicy.xml').children[0].children[1].appendChild(p); }
+					document.getElementById('clientaccesspolicy.xml').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('clientaccesspolicy-generate').classList.replace('show','hide');
 			document.getElementById('clientaccesspolicy-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('clientaccesspolicy-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('clientaccesspolicy.xml').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('clientaccesspolicy.xml').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('clientaccesspolicy.xml').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('clientaccesspolicy.xml').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('clientaccesspolicy.xml', 'text/xml', meta );
 	},false);
@@ -1169,16 +1169,16 @@ function download(filename, encode, text) {
 (function crossdomainxml(){
 	let button = document.getElementById('crossdomain-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('crossdomain.xml').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('crossdomain.xml').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading crossdomain.xml'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('crossdomain.xml').children[0].childElementCount == 1) {
-			document.getElementById('crossdomain.xml').children[0].appendChild(fieldset);
-			document.getElementById('crossdomain.xml').children[0].children[1].appendChild(legend);
+		if (document.getElementById('crossdomain.xml').children[1].childElementCount == 1) {
+			document.getElementById('crossdomain.xml').children[1].appendChild(fieldset);
+			document.getElementById('crossdomain.xml').children[1].children[1].appendChild(legend);
 			var tag = ['flash','flash-domain','flash-min','flash-max','flash2'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -1210,15 +1210,15 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('crossdomain.xml').children[0].children[1].appendChild(p); }
+					document.getElementById('crossdomain.xml').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('crossdomain-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('crossdomain-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('crossdomain.xml').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('crossdomain.xml').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('crossdomain.xml').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('crossdomain.xml').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('crossdomain.xml', 'text/xml', meta );
 	},false);
@@ -1226,16 +1226,16 @@ function download(filename, encode, text) {
 (function dublinrdf(){
 	let button = document.getElementById('dublin-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('dublin.rdf').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('dublin.rdf').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading dublin.rdf'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('dublin.rdf').children[0].childElementCount == 1) {
-			document.getElementById('dublin.rdf').children[0].appendChild(fieldset);
-			document.getElementById('dublin.rdf').children[0].children[1].appendChild(legend);
+		if (document.getElementById('dublin.rdf').children[1].childElementCount == 1) {
+			document.getElementById('dublin.rdf').children[1].appendChild(fieldset);
+			document.getElementById('dublin.rdf').children[1].children[1].appendChild(legend);
 			var tag = ['dublin','dublin-con','dublin-cov','dublin-cre','dublin-dat','dublin-des','dublin-for','dublin-ide','dublin-lan','dublin-pub','dublin-rel','dublin-rig','dublin-sou','dublin-sub','dublin-tit','dublin-typ','dublin2'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -1283,21 +1283,21 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('dublin.rdf').children[0].children[1].appendChild(p); }
+					document.getElementById('dublin.rdf').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('dublin.rdf').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('dublin.rdf').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('dublin.rdf').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('dublin.rdf').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<link rel="author" type="application/rdf+xml" href="dublin.rdf">'));
-			document.getElementById('dublin.rdf').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('dublin.rdf').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('dublin-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('dublin-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('dublin.rdf').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('dublin.rdf').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('dublin.rdf').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('dublin.rdf').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('dublin.rdf', 'application/rdf+xml', meta );
 	},false);
@@ -1305,16 +1305,16 @@ function download(filename, encode, text) {
 (function errorhtml(){
 	let button = document.getElementById('error-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('error.html').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('error.html').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading error.html'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('.htaccess'));
-		if (document.getElementById('error.html').children[0].childElementCount == 1) {
-			document.getElementById('error.html').children[0].appendChild(fieldset);
-			document.getElementById('error.html').children[0].children[1].appendChild(legend);
+		if (document.getElementById('error.html').children[1].childElementCount == 1) {
+			document.getElementById('error.html').children[1].appendChild(fieldset);
+			document.getElementById('error.html').children[1].children[1].appendChild(legend);
 			var tag = ['error','error-400','error-401','error-402','error-403','error-404','error-405','error-406','error-407','error-408','error-409','error-410','error-411','error-412','error-413','error-414','error-415','error-416','error-417','error-418','error-421','error-422','error-423','error-424','error-426','error-428','error-429','error-431','error-444','error-451','error-499',
 			'error-500','error-501','error-502','error-503','error-504','error-505','error-506','error-507','error-508','error-510','error-511','error-599','error2'];
 			tag.forEach(function(el) {
@@ -1792,10 +1792,10 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('error.html').children[0].children[1].appendChild(p); }
+					document.getElementById('error.html').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('error.html').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('error.html').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('error.html').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('error.html').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('Options -MultiViews'));
@@ -1806,14 +1806,14 @@ function download(filename, encode, text) {
 				if (document.getElementById('error-' + elem).checked === true) {
 					head.appendChild(document.createTextNode('ErrorDocument ' + elem + ' https://domain.com/error.html#' + elem));
 					head.appendChild(document.createElement('br')); } }
-			document.getElementById('error.html').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('error.html').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('error-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('error-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('error.html').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('error.html').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('error.html').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('error.html').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('error.html', 'text/html', meta );
 	},false);
@@ -1821,16 +1821,16 @@ function download(filename, encode, text) {
 (function eventics(){
 	let button = document.getElementById('event-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('event.ics').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('event.ics').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading event.ics'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('event.ics').children[0].childElementCount == 1) {
-			document.getElementById('event.ics').children[0].appendChild(fieldset);
-			document.getElementById('event.ics').children[0].children[1].appendChild(legend);
+		if (document.getElementById('event.ics').children[1].childElementCount == 1) {
+			document.getElementById('event.ics').children[1].appendChild(fieldset);
+			document.getElementById('event.ics').children[1].children[1].appendChild(legend);
 			var tag = ['event','event-summary','event-timestamp','event-startend','event-frequency', 'event-location','event-url', 'event-organizer','event-description','event-reminder','event-uid','event2'];
 			tag.forEach(function(el) {
 				var summary; var p = document.createElement('p');
@@ -1906,15 +1906,15 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('event.ics').children[0].children[1].appendChild(p); }
+					document.getElementById('event.ics').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('event-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('event-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('event.ics').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('event.ics').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('event.ics').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('event.ics').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('event.ics', 'text/calendar', meta );
 	},false);
@@ -1922,16 +1922,16 @@ function download(filename, encode, text) {
 (function feedxml(){
 	var typeset; var charset; let button = document.getElementById('feed-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('feed.xml').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('feed.xml').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading feed.xml'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('feed.xml').children[0].childElementCount == 1) {
-			document.getElementById('feed.xml').children[0].appendChild(fieldset);
-			document.getElementById('feed.xml').children[0].children[1].appendChild(legend);
+		if (document.getElementById('feed.xml').children[1].childElementCount == 1) {
+			document.getElementById('feed.xml').children[1].appendChild(fieldset);
+			document.getElementById('feed.xml').children[1].children[1].appendChild(legend);
 			var tag = ['feed-itunes','feed-rss','feed-atom','feed-json'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -2370,21 +2370,21 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('feed.xml').children[0].children[1].appendChild(p); }
+					document.getElementById('feed.xml').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('feed.xml').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('feed.xml').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('feed.xml').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('feed.xml').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<link rel="alternate" type="' + typeset + '" href="feed.' + charset +'">'));
-			document.getElementById('feed.xml').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('feed.xml').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('feed-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('feed-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('feed.xml').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('feed.xml').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('feed.xml').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('feed.xml').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('feed.' + charset, typeset, meta );
 	},false);
@@ -2392,16 +2392,16 @@ function download(filename, encode, text) {
 (function foafrdf(){
 	let button = document.getElementById('foaf-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('foaf.rdf').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('foaf.rdf').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading foaf.rdf'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('foaf.rdf').children[0].childElementCount == 1) {
-			document.getElementById('foaf.rdf').children[0].appendChild(fieldset);
-			document.getElementById('foaf.rdf').children[0].children[1].appendChild(legend);
+		if (document.getElementById('foaf.rdf').children[1].childElementCount == 1) {
+			document.getElementById('foaf.rdf').children[1].appendChild(fieldset);
+			document.getElementById('foaf.rdf').children[1].children[1].appendChild(legend);
 			var tag = ['foaf','foaf-name','foaf-homepage', 'foaf-img','foaf-email','foaf-jabber','foaf-based','foaf-made','foaf-account','foaf-category','foaf-age','foaf-relation','foaf-openid','foaf-sha1','foaf2'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -2501,21 +2501,21 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('foaf.rdf').children[0].children[1].appendChild(p); }
+					document.getElementById('foaf.rdf').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('foaf.rdf').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('foaf.rdf').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('foaf.rdf').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('foaf.rdf').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<link rel="author" type="application/rdf+xml" href="foaf.rdf">'));
-			document.getElementById('foaf.rdf').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('foaf.rdf').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('foaf-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('foaf-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('foaf.rdf').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('foaf.rdf').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('foaf.rdf').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('foaf.rdf').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('foaf.rdf', 'application/rdf+xml', meta );
 	},false);
@@ -2523,16 +2523,16 @@ function download(filename, encode, text) {
 (function geordf(){
 	var typeset; var charset; let button = document.getElementById('geo-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('geo.rdf').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('geo.rdf').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading geo.rdf'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('geo.rdf').children[0].childElementCount == 1) {
-			document.getElementById('geo.rdf').children[0].appendChild(fieldset);
-			document.getElementById('geo.rdf').children[0].children[1].appendChild(legend);
+		if (document.getElementById('geo.rdf').children[1].childElementCount == 1) {
+			document.getElementById('geo.rdf').children[1].appendChild(fieldset);
+			document.getElementById('geo.rdf').children[1].children[1].appendChild(legend);
 			var tag = ['geo','geo-rdf','geo-kml'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -2600,21 +2600,21 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('geo.rdf').children[0].children[1].appendChild(p); }
+					document.getElementById('geo.rdf').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('geo.rdf').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('geo.rdf').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('geo.rdf').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('geo.rdf').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<link rel="author" type="' + typeset + '" href="geo.' + charset + '">'));
-			document.getElementById('geo.rdf').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('geo.rdf').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('geo-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('geo-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('geo.rdf').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('geo.rdf').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('geo.rdf').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('geo.rdf').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('geo.' + charset, typeset, meta );
 	},false);
@@ -2622,16 +2622,16 @@ function download(filename, encode, text) {
 (function humanstxt(){
 	let button = document.getElementById('humans-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('humans.txt').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('humans.txt').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading humans.txt'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('humans.txt').children[0].childElementCount == 1) {
-			var credit = false; var site = false; document.getElementById('humans.txt').children[0].appendChild(fieldset);
-			document.getElementById('humans.txt').children[0].children[1].appendChild(legend);
+		if (document.getElementById('humans.txt').children[1].childElementCount == 1) {
+			var credit = false; var site = false; document.getElementById('humans.txt').children[1].appendChild(fieldset);
+			document.getElementById('humans.txt').children[1].children[1].appendChild(legend);
 			var tag = ['humans','humans-team','humans-thanks','humans-license','humans-visitor','humans-languages','humans-standards','humans-components','humans-software','humans-services','humans-support','humans-updated'];
 			if ((document.getElementById('humans-thanks').checked === true || document.getElementById('humans-license').checked === true || document.getElementById('humans-visitor').checked === true) && credit === false) { credit = true; }
 			if ((document.getElementById('humans-languages').checked === true || document.getElementById('humans-standards').checked === true || document.getElementById('humans-components').checked === true || document.getElementById('humans-software').checked === true || document.getElementById('humans-services').checked === true || document.getElementById('humans-support').checked === true || document.getElementById('humans-updated').checked === true) && site === false) { site = true; }
@@ -2703,21 +2703,21 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('humans.txt').children[0].children[1].appendChild(p); }
+					document.getElementById('humans.txt').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('humans.txt').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('humans.txt').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('humans.txt').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('humans.txt').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<link rel="author" type="text/plain" href="humans.txt">'));
-			document.getElementById('humans.txt').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('humans.txt').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('humans-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('humans-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('humans.txt').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('humans.txt').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('humans.txt').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('humans.txt').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('humans.txt', 'text/plain', meta );
 	},false);
@@ -2725,16 +2725,16 @@ function download(filename, encode, text) {
 (function indexhtml(){
 	let button = document.getElementById('index-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('index.html').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('index.html').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading index.html.'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('index.html').children[0].childElementCount == 1) {
-			document.getElementById('index.html').children[0].appendChild(fieldset);
-			document.getElementById('index.html').children[0].children[1].appendChild(legend);
+		if (document.getElementById('index.html').children[1].childElementCount == 1) {
+			document.getElementById('index.html').children[1].appendChild(fieldset);
+			document.getElementById('index.html').children[1].children[1].appendChild(legend);
 			var tag = ['index'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -2815,16 +2815,16 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('index.html').children[0].children[1].appendChild(p); }
+					document.getElementById('index.html').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('index-generate').classList.replace('show','hide');
 			document.getElementById('index-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('index-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('index.html').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('index.html').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('index.html').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('index.html').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('index.html', 'text/html', meta );
 	},false);
@@ -2832,16 +2832,16 @@ function download(filename, encode, text) {
 (function legaltxt(){
 	let button = document.getElementById('legal-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('legal.txt').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('legal.txt').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading legal.txt'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('legal.txt').children[0].childElementCount == 1) {
-			document.getElementById('legal.txt').children[0].appendChild(fieldset);
-			document.getElementById('legal.txt').children[0].children[1].appendChild(legend);
+		if (document.getElementById('legal.txt').children[1].childElementCount == 1) {
+			document.getElementById('legal.txt').children[1].appendChild(fieldset);
+			document.getElementById('legal.txt').children[1].children[1].appendChild(legend);
 			var tag = ['ads','legal-apache','legal-gpl3', 'legal-mit','legal-cc','legal-blueoak','legal-hippocratic',
 			'legal-tos','legal-impressum','legal-a11y','legal-privacy'];
 			tag.forEach(function(el) {
@@ -2874,23 +2874,23 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('legal.txt').children[0].children[1].appendChild(p); }
+					document.getElementById('legal.txt').children[1].children[1].appendChild(p); }
 			}); }
 		return false; }, false);
 })();
 (function listopml(){
 	let button = document.getElementById('list-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('list.opml').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('list.opml').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading list.opml'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('list.opml').children[0].childElementCount == 1) {
-			document.getElementById('list.opml').children[0].appendChild(fieldset);
-			document.getElementById('list.opml').children[0].children[1].appendChild(legend);
+		if (document.getElementById('list.opml').children[1].childElementCount == 1) {
+			document.getElementById('list.opml').children[1].appendChild(fieldset);
+			document.getElementById('list.opml').children[1].children[1].appendChild(legend);
 			var tag = ['list','list-owner','list-date','list-docs','list-state','list-window','list2','list-music','list-links','list3'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -2947,21 +2947,21 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('list.opml').children[0].children[1].appendChild(p); }
+					document.getElementById('list.opml').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('list.opml').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('list.opml').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('list.opml').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('list.opml').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<link rel="alternate" type="application/text+xml" href="list.opml">'));
-			document.getElementById('list.opml').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('list.opml').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('list-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('list-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('list.opml').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('list.opml').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('list.opml').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('list.opml').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('list.opml', 'application/text+xml', meta );
 	},false);
@@ -2969,16 +2969,16 @@ function download(filename, encode, text) {
 (function modescss(){
 	let button = document.getElementById('modes-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('modes.css').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('modes.css').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading modes.css'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('modes.css').children[0].childElementCount == 1) {
-			document.getElementById('modes.css').children[0].appendChild(fieldset);
-			document.getElementById('modes.css').children[0].children[1].appendChild(legend);
+		if (document.getElementById('modes.css').children[1].childElementCount == 1) {
+			document.getElementById('modes.css').children[1].appendChild(fieldset);
+			document.getElementById('modes.css').children[1].children[1].appendChild(legend);
 			var tag = ['modes','modes-invert','modes-light','modes-pixel','modes-monochrome','modes-pointer','modes-dark','modes-motion','modes-contrast','modes-data','modes-transparency','modes-fold'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -3178,21 +3178,21 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('modes.css').children[0].children[1].appendChild(p); }
+					document.getElementById('modes.css').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('modes.css').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('modes.css').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('modes.css').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('modes.css').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<link rel="stylesheet" href="assets/modes.css">'));
-			document.getElementById('modes.css').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('modes.css').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('modes-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('modes-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('modes.css').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('modes.css').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('modes.css').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('modes.css').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('modes.css', 'text/css', meta );
 	},false);
@@ -3200,16 +3200,16 @@ function download(filename, encode, text) {
 (function opensearchxml(){
 	let button = document.getElementById('opensearch-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('opensearch.xml').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('opensearch.xml').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading opensearch.xml'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('opensearch.xml').children[0].childElementCount == 1) {
-			document.getElementById('opensearch.xml').children[0].appendChild(fieldset);
-			document.getElementById('opensearch.xml').children[0].children[1].appendChild(legend);
+		if (document.getElementById('opensearch.xml').children[1].childElementCount == 1) {
+			document.getElementById('opensearch.xml').children[1].appendChild(fieldset);
+			document.getElementById('opensearch.xml').children[1].children[1].appendChild(legend);
 			var tag = ['opensearch','opensearch-google','opensearch-adult','opensearch-copyright','opensearch-contact','opensearch-name','opensearch-icon','opensearch-input','opensearch-language','opensearch-longtitle','opensearch-output','opensearch-query','opensearch-syndicate','opensearch-tags','opensearch2'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -3258,21 +3258,21 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('opensearch.xml').children[0].children[1].appendChild(p); }
+					document.getElementById('opensearch.xml').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('opensearch.xml').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('opensearch.xml').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('opensearch.xml').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('opensearch.xml').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<link rel="search" type="application/opensearchdescription+xml" href="opensearch.xml">'));
-			document.getElementById('opensearch.xml').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('opensearch.xml').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('opensearch-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('opensearch-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('opensearch.xml').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('opensearch.xml').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('opensearch.xml').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('opensearch.xml').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('opensearch.xml', 'application/opensearchdescription+xml', meta );
 	},false);
@@ -3280,16 +3280,16 @@ function download(filename, encode, text) {
 (function p3pxml(){
 	let button = document.getElementById('p3p-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('p3p.xml').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('p3p.xml').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading p3p.xml'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('p3p.xml').children[0].childElementCount == 1) {
-			document.getElementById('p3p.xml').children[0].appendChild(fieldset);
-			document.getElementById('p3p.xml').children[0].children[1].appendChild(legend);
+		if (document.getElementById('p3p.xml').children[1].childElementCount == 1) {
+			document.getElementById('p3p.xml').children[1].appendChild(fieldset);
+			document.getElementById('p3p.xml').children[1].children[1].appendChild(legend);
 			var tag = ['p3p'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -3315,22 +3315,22 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('p3p.xml').children[0].children[1].appendChild(p); }
+					document.getElementById('p3p.xml').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('p3p.xml').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('p3p.xml').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('p3p.xml').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('p3p.xml').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<link rel="P3Pv1" type="text/xml" href="p3p.xml">'));
-			document.getElementById('p3p.xml').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('p3p.xml').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('p3p-generate').classList.replace('show','hide');
 			document.getElementById('p3p-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('p3p-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('p3p.xml').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('p3p.xml').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('p3p.xml').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('p3p.xml').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('p3p.xml', 'text/xml', meta );
 	},false);
@@ -3338,16 +3338,16 @@ function download(filename, encode, text) {
 (function powderxml(){
 	var typeset; var filename; let button = document.getElementById('powder-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('powder.xml').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('powder.xml').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading powder.xml'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('powder.xml').children[0].childElementCount == 1) {
-			document.getElementById('powder.xml').children[0].appendChild(fieldset);
-			document.getElementById('powder.xml').children[0].children[1].appendChild(legend);
+		if (document.getElementById('powder.xml').children[1].childElementCount == 1) {
+			document.getElementById('powder.xml').children[1].appendChild(fieldset);
+			document.getElementById('powder.xml').children[1].children[1].appendChild(legend);
 			var tag = ['powder-xml','powder-rdf'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -3479,21 +3479,21 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('powder.xml').children[0].children[1].appendChild(p); }
+					document.getElementById('powder.xml').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('powder.xml').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('powder.xml').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('powder.xml').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('powder.xml').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<link rel="author" type="' + typeset + '" href="' + filename + '">'));
-			document.getElementById('powder.xml').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('powder.xml').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('powder-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('powder-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('powder.xml').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('powder.xml').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('powder.xml').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('powder.xml').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('geo.' + filename, typeset, meta );
 	},false);
@@ -3501,16 +3501,16 @@ function download(filename, encode, text) {
 (function printcss(){
 	let button = document.getElementById('print-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('print.css').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('print.css').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading print.css'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('print.css').children[0].childElementCount == 1) {
-			document.getElementById('print.css').children[0].appendChild(fieldset);
-			document.getElementById('print.css').children[0].children[1].appendChild(legend);
+		if (document.getElementById('print.css').children[1].childElementCount == 1) {
+			document.getElementById('print.css').children[1].appendChild(fieldset);
+			document.getElementById('print.css').children[1].children[1].appendChild(legend);
 			var tag = ['print','print-reset','print-minimal','print-url','print-cover','print-hide','print-dark','print-filter','print-img','print-break','print-paper','print2', 'print-paper2','print-column','print-chrome'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -3820,21 +3820,21 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('print.css').children[0].children[1].appendChild(p); }
+					document.getElementById('print.css').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('print.css').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('print.css').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('print.css').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('print.css').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<link rel="stylesheet" media="print" href="assets/print.css">'));
-			document.getElementById('print.css').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('print.css').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('print-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('print-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('print.css').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('print.css').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('print.css').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('print.css').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('print.css', 'text/css', meta );
 	},false);
@@ -3842,16 +3842,16 @@ function download(filename, encode, text) {
 (function readme(){
 	let button = document.getElementById('readme-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('readme').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('readme').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading readme'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('readme').children[0].childElementCount == 1) {
-			document.getElementById('readme').children[0].appendChild(fieldset);
-			document.getElementById('readme').children[0].children[1].appendChild(legend);
+		if (document.getElementById('readme').children[1].childElementCount == 1) {
+			document.getElementById('readme').children[1].appendChild(fieldset);
+			document.getElementById('readme').children[1].children[1].appendChild(legend);
 			var tag = ['readme','readme-overview','readme-usage','readme-installation','readme-support'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -3907,15 +3907,15 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('readme').children[0].children[1].appendChild(p); }
+					document.getElementById('readme').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('readme-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('readme-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('readme').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('readme').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('readme').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('readme').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('readme', 'text/plain', meta );
 	},false);
@@ -3923,16 +3923,16 @@ function download(filename, encode, text) {
 (function robotstxt(){
 	let button = document.getElementById('robots-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('robots.txt').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('robots.txt').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading robots.txt'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('robots.txt').children[0].childElementCount == 1) {
-			document.getElementById('robots.txt').children[0].appendChild(fieldset);
-			document.getElementById('robots.txt').children[0].children[1].appendChild(legend);
+		if (document.getElementById('robots.txt').children[1].childElementCount == 1) {
+			document.getElementById('robots.txt').children[1].appendChild(fieldset);
+			document.getElementById('robots.txt').children[1].children[1].appendChild(legend);
 			var tag = ['robots','robots-agent','robots-version','robots-disallow','robots-allow','robots-sitemap','robots-comment','robots-request','robots-visit'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -3958,15 +3958,15 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('robots.txt').children[0].children[1].appendChild(p); }
+					document.getElementById('robots.txt').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('robots-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('robots-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('robots.txt').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('robots.txt').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('robots.txt').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('robots.txt').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('robots.txt', 'text/plain', meta);
 	},false);
@@ -3974,16 +3974,16 @@ function download(filename, encode, text) {
 (function securitytxt(){
 	let button = document.getElementById('security-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('security.txt').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('security.txt').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading security.txt'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Apache'));
-		if (document.getElementById('security.txt').children[0].childElementCount == 1) {
-			document.getElementById('security.txt').children[0].appendChild(fieldset);
-			document.getElementById('security.txt').children[0].children[1].appendChild(legend);
+		if (document.getElementById('security.txt').children[1].childElementCount == 1) {
+			document.getElementById('security.txt').children[1].appendChild(fieldset);
+			document.getElementById('security.txt').children[1].children[1].appendChild(legend);
 			var tag = ['security'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -4038,17 +4038,17 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('security.txt').children[0].children[1].appendChild(p); }
+					document.getElementById('security.txt').children[1].children[1].appendChild(p); }
 			});
 			if (document.getElementById('security-dnt').checked === true) {
-				document.getElementById('security.txt').children[0].children[1].appendChild(fieldset2);
-				document.getElementById('security.txt').children[0].children[1].lastElementChild.appendChild(legend2);
+				document.getElementById('security.txt').children[1].children[1].appendChild(fieldset2);
+				document.getElementById('security.txt').children[1].children[1].lastElementChild.appendChild(legend2);
 				var txt = document.createElement('p'); var head = document.createElement('code');
 				txt.appendChild(head).classList.add('code');
 				head.appendChild(document.createTextNode('SetEnvIfNoCase DNT 1 DO_NOT_TRACK'));
 				head.appendChild(document.createElement('br'));
 				head.appendChild(document.createTextNode('CustomLog ${APACHE_LOG_DIR}/access.log combined env=!DO_NOT_TRACK'));
-				document.getElementById('security.txt').children[0].children[1].lastElementChild.appendChild(txt);
+				document.getElementById('security.txt').children[1].children[1].lastElementChild.appendChild(txt);
 				document.getElementById('security-download').classList.replace('show','hide');
 			}
 			if (document.getElementById('security-txt').checked === true) {
@@ -4057,9 +4057,9 @@ function download(filename, encode, text) {
 		return false; }, false);
 	let button2 = document.getElementById('security-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('security.txt').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('security.txt').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('security.txt').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('security.txt').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('security.txt', 'text/plain', meta);
 	},false);
@@ -4067,16 +4067,16 @@ function download(filename, encode, text) {
 (function sitewebmanifest(){
 	var typeset; var charset; let button = document.getElementById('webmanifest-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('site.webmanifest').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('site.webmanifest').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading site.webmanifest'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('site.webmanifest').children[0].childElementCount == 1) {
-			document.getElementById('site.webmanifest').children[0].appendChild(fieldset);
-			document.getElementById('site.webmanifest').children[0].children[1].appendChild(legend);
+		if (document.getElementById('site.webmanifest').children[1].childElementCount == 1) {
+			document.getElementById('site.webmanifest').children[1].appendChild(fieldset);
+			document.getElementById('site.webmanifest').children[1].children[1].appendChild(legend);
 			var tag = ['webmanifest-json','webmanifest-xml'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -4218,24 +4218,24 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('site.webmanifest').children[0].children[1].appendChild(p); }
+					document.getElementById('site.webmanifest').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('site.webmanifest').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('site.webmanifest').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('site.webmanifest').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('site.webmanifest').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			if (document.getElementById('webmanifest-json').checked === true) {
 				head.appendChild(document.createTextNode('<link rel="manifest" href="site.webmanifest">')); }
 			if (document.getElementById('webmanifest-xml').checked === true) {
 				head.appendChild(document.createTextNode('<meta name="msapplication-config" content="browserconfig.xml">')); }
-			document.getElementById('site.webmanifest').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('site.webmanifest').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('webmanifest-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('webmanifest-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('site.webmanifest').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('site.webmanifest').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('site.webmanifest').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('site.webmanifest').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('geo.' + charset, typeset, meta );
 	},false);
@@ -4243,16 +4243,16 @@ function download(filename, encode, text) {
 (function sitemapxml(){
 	let button = document.getElementById('sitemap-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('sitemap.xml').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('sitemap.xml').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading sitemap.xml'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('sitemap.xml').children[0].childElementCount == 1) {
-			document.getElementById('sitemap.xml').children[0].appendChild(fieldset);
-			document.getElementById('sitemap.xml').children[0].children[1].appendChild(legend);
+		if (document.getElementById('sitemap.xml').children[1].childElementCount == 1) {
+			document.getElementById('sitemap.xml').children[1].appendChild(fieldset);
+			document.getElementById('sitemap.xml').children[1].children[1].appendChild(legend);
 			var tag = ['sitemap','sitemap-loc','sitemap-date','sitemap-change','sitemap-priority','sitemap2'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -4282,15 +4282,15 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('sitemap.xml').children[0].children[1].appendChild(p); }
+					document.getElementById('sitemap.xml').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('sitemap-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('sitemap-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('sitemap.xml').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('sitemap.xml').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('sitemap.xml').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('sitemap.xml').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('sitemap.xml', 'application/text+xml', meta );
 	},false);
@@ -4298,16 +4298,16 @@ function download(filename, encode, text) {
 (function stylecss(){
 	let button = document.getElementById('style-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('style.css').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('style.css').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading style.css'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Head'));
-		if (document.getElementById('style.css').children[0].childElementCount == 1) {
-			document.getElementById('style.css').children[0].appendChild(fieldset);
-			document.getElementById('style.css').children[0].children[1].appendChild(legend);
+		if (document.getElementById('style.css').children[1].childElementCount == 1) {
+			document.getElementById('style.css').children[1].appendChild(fieldset);
+			document.getElementById('style.css').children[1].children[1].appendChild(legend);
 			var tag = ['style','style2','style-bp','style3'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -4357,21 +4357,21 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('style.css').children[0].children[1].appendChild(p); }
+					document.getElementById('style.css').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('style.css').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('style.css').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('style.css').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('style.css').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<link rel="stylesheet" media="screen" href="assets/style.css">'));
-			document.getElementById('style.css').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('style.css').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('style-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('style-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('style.css').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('style.css').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('style.css').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('style.css').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('style.css', 'text/css', meta );
 	},false);
@@ -4379,16 +4379,16 @@ function download(filename, encode, text) {
 (function subtitlesvtt(){
 	let button = document.getElementById('subtitles-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('subtitles.vtt').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('subtitles.vtt').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading subtitles.vtt'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Video'));
-		if (document.getElementById('subtitles.vtt').children[0].childElementCount == 1) {
-			document.getElementById('subtitles.vtt').children[0].appendChild(fieldset);
-			document.getElementById('subtitles.vtt').children[0].children[1].appendChild(legend);
+		if (document.getElementById('subtitles.vtt').children[1].childElementCount == 1) {
+			document.getElementById('subtitles.vtt').children[1].appendChild(fieldset);
+			document.getElementById('subtitles.vtt').children[1].children[1].appendChild(legend);
 			var tag = ['subtitles','subtitles-record','subtitles-comments'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -4413,10 +4413,10 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('subtitles.vtt').children[0].children[1].appendChild(p); }
+					document.getElementById('subtitles.vtt').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('subtitles.vtt').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('subtitles.vtt').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('subtitles.vtt').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('subtitles.vtt').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<video height="480" width="640" controls>'));
@@ -4428,14 +4428,14 @@ function download(filename, encode, text) {
 			head.appendChild(document.createTextNode('<track kind="subtitles" src="videos/subtitles.vtt" label="English" srclang="en">'));
 			head.appendChild(document.createElement('br'));
 			head.appendChild(document.createTextNode('</video>'));
-			document.getElementById('subtitles.vtt').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('subtitles.vtt').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('subtitles-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('subtitles-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('subtitles.vtt').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('subtitles.vtt').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('subtitles.vtt').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('subtitles.vtt').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('subtitles.vtt', 'text/vtt', meta );
 	},false);
@@ -4443,16 +4443,16 @@ function download(filename, encode, text) {
 (function swjs(){
 	let button = document.getElementById('sw-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('sw.js').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('sw.js').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading sw.js'); }
 		var fieldset = document.createElement('fieldset'); var fieldset2 = document.createElement('fieldset');
 		fieldset.classList.add('spacer'); fieldset2.classList.add('spacer');
 		var legend = document.createElement('legend'); var legend2 = document.createElement('legend');
 		legend.classList.add('assist'); legend2.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results')); legend2.appendChild(document.createTextNode('Body'));
-		if (document.getElementById('sw.js').children[0].childElementCount == 1) {
-			document.getElementById('sw.js').children[0].appendChild(fieldset);
-			document.getElementById('sw.js').children[0].children[1].appendChild(legend);
+		if (document.getElementById('sw.js').children[1].childElementCount == 1) {
+			document.getElementById('sw.js').children[1].appendChild(fieldset);
+			document.getElementById('sw.js').children[1].children[1].appendChild(legend);
 			var tag = ['sw'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -4528,10 +4528,10 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('sw.js').children[0].children[1].appendChild(p); }
+					document.getElementById('sw.js').children[1].children[1].appendChild(p); }
 			});
-			document.getElementById('sw.js').children[0].children[1].appendChild(fieldset2);
-			document.getElementById('sw.js').children[0].children[1].lastElementChild.appendChild(legend2);
+			document.getElementById('sw.js').children[1].children[1].appendChild(fieldset2);
+			document.getElementById('sw.js').children[1].children[1].lastElementChild.appendChild(legend2);
 			var txt = document.createElement('p'); var head = document.createElement('code');
 			txt.appendChild(head).classList.add('code');
 			head.appendChild(document.createTextNode('<script>'));
@@ -4545,15 +4545,15 @@ function download(filename, encode, text) {
 			head.appendChild(document.createTextNode('}'));
 			head.appendChild(document.createElement('br'));
 			head.appendChild(document.createTextNode('</script>'));
-			document.getElementById('sw.js').children[0].children[1].lastElementChild.appendChild(txt);
+			document.getElementById('sw.js').children[1].children[1].lastElementChild.appendChild(txt);
 			document.getElementById('sw-generate').classList.replace('show','hide');
 			document.getElementById('sw-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('sw-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('sw.js').children[0].children[1].childElementCount - 1;
+		var meta = ""; var arr = document.getElementById('sw.js').children[1].children[1].childElementCount - 1;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('sw.js').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('sw.js').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('sw.js', 'text/javascript', meta );
 	},false);
@@ -4561,16 +4561,16 @@ function download(filename, encode, text) {
 (function vcardvcf(){
 	let button = document.getElementById('vcard-generate');
 	button.addEventListener('click', function(){
-	try { var myobj = document.getElementById('vcard.vcf').children[0].children[1]; myobj.remove();
+	try { var myobj = document.getElementById('vcard.vcf').children[1].children[1]; myobj.remove();
 	} catch (error) { console.log('Loading vcard.vcf'); }
 		var fieldset = document.createElement('fieldset');
 		fieldset.classList.add('spacer');
 		var legend = document.createElement('legend');
 		legend.classList.add('assist');
 		legend.appendChild(document.createTextNode('Results'));
-		if (document.getElementById('vcard.vcf').children[0].childElementCount == 1) {
-			document.getElementById('vcard.vcf').children[0].appendChild(fieldset);
-			document.getElementById('vcard.vcf').children[0].children[1].appendChild(legend);
+		if (document.getElementById('vcard.vcf').children[1].childElementCount == 1) {
+			document.getElementById('vcard.vcf').children[1].appendChild(fieldset);
+			document.getElementById('vcard.vcf').children[1].children[1].appendChild(legend);
 			var tag = ['vcard','vcard-name','vcard-date','vcard-phone','vcard-email','vcard-website','vcard-social','vcard-location','vcard-photo','vcard-note','vcard-related','vcard-uid','vcard2'];
 			tag.forEach(function(el) {
 				var p = document.createElement('p');
@@ -4661,15 +4661,15 @@ function download(filename, encode, text) {
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
-					document.getElementById('vcard.vcf').children[0].children[1].appendChild(p); }
+					document.getElementById('vcard.vcf').children[1].children[1].appendChild(p); }
 			});
 			document.getElementById('vcard-download').classList.replace('hide','show'); }
 		return false; }, false);
 	let button2 = document.getElementById('vcard-download');
 	button2.addEventListener('click', function(){
-		var meta = ""; var arr = document.getElementById('vcard.vcf').children[0].children[1].childElementCount;
+		var meta = ""; var arr = document.getElementById('vcard.vcf').children[1].children[1].childElementCount;
 		for (var i = 1; i < arr; i++) {
-			meta = meta + document.getElementById('vcard.vcf').children[0].children[1].children[i].innerText + '\n'; }
+			meta = meta + document.getElementById('vcard.vcf').children[1].children[1].children[i].innerText + '\n'; }
 		meta = meta.slice(0, -1);
 		download('vcard.vcf', 'text/vcard', meta );
 	},false);
