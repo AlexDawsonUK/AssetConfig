@@ -1395,13 +1395,13 @@ function download(filename, encode, text) {
 					code.appendChild(document.createElement('br'));
 					code.appendChild(document.createTextNode('</article>'));
 				} else if (el == 'error-404' && document.getElementById('error-404').checked === true) {
-					code.appendChild(document.createTextNode('<article class="error" id="404">'));
+					code.appendChild(document.createTextNode('<article class="error">'));
 					code.appendChild(document.createElement('br'));
 					code.appendChild(document.createTextNode('<h2>404</h2>'));
 					code.appendChild(document.createElement('br'));
 					code.appendChild(document.createTextNode('<h3>Resource Not Found</h3>'));
 					code.appendChild(document.createElement('br'));
-					code.appendChild(document.createTextNode('<p>You made a wrong turn. Lets try a different link.</p>'));
+					code.appendChild(document.createTextNode('<p>You made a wrong turn. <a href="index.html">Lets try a different link</a>.</p>'));
 					code.appendChild(document.createElement('br'));
 					code.appendChild(document.createTextNode('</article>'));
 				} else if (el == 'error-405' && document.getElementById('error-405').checked === true) {
@@ -2696,7 +2696,7 @@ function download(filename, encode, text) {
 				} if (el == 'humans-services' && document.getElementById('humans-services').checked === true) {
 					code.appendChild(document.createTextNode('Services: Font (Typeface), Name (Icons), Hosting, Domains'));
 				} if (el == 'humans-support' && document.getElementById('humans-support').checked === true) {
-					code.appendChild(document.createTextNode('Testing: Chrome (Mac/PC), Firefox (Mac/PC), Safari (Mac/iOS), IE (11+)'));
+					code.appendChild(document.createTextNode('Testing: Chrome (Mac/PC), Firefox (Mac/PC), Safari (Mac/iOS)'));
 				} if (el == 'humans-updated' && document.getElementById('humans-updated').checked === true) {
 					var date = new Date().toISOString().substr(0, 19);
 					code.appendChild(document.createTextNode('Updated: ' + date.replace('T',' ')));

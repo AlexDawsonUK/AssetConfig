@@ -129,7 +129,7 @@
 	.format {
 		padding-left: 2em;
 		padding-right: 2em; }
-	.book, .dl, #download, .grid, .header, .overview, .spacer, .subview, .t_show {
+	.book, .dl, #download, .grid, .header, .overview, .spacer, .subview, main article {
 		text-align: center; }
 	.spacer .spacer, .spacer ~ .spacer {
 		text-align: left; }
