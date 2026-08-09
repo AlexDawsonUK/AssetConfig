@@ -947,15 +947,21 @@ function download(filename, encode, text) {
 				if (el == 'carbon') {
 					code.appendChild(document.createTextNode('# carbon.txt - Verify the Web\'s Green Infrastructure'));
 				} else if (el == 'carbon-record' && document.getElementById('carbon-record').checked === true) {
+					code.appendChild(document.createTextNode('version="0.5"'));
+					code.appendChild(document.createElement('br'));
+					var cal = new Date();
+					var date = cal.toISOString().split('T')[0];
+					code.appendChild(document.createTextNode('last_updated="' + date + '"'));
+					code.appendChild(document.createElement('br'));
+					code.appendChild(document.createElement('br'));
+					code.appendChild(document.createTextNode('[org]'));
+					code.appendChild(document.createElement('br'));
+					code.appendChild(document.createTextNode('disclosures = [ { doc_type="TYPE", url="URL", valid_until=DATE, title="TITLE" }, ]'));
+					code.appendChild(document.createElement('br'));
+				} else if (el == 'carbon-details' && document.getElementById('carbon-details').checked === true) {
 					code.appendChild(document.createTextNode('[upstream]'));
 					code.appendChild(document.createElement('br'));
-					code.appendChild(document.createTextNode('# URL (Host) Datacenter (Location)'));
-					code.appendChild(document.createElement('br'));
-					code.appendChild(document.createTextNode('domain.com london'));
-				} else if (el == 'carbon-details' && document.getElementById('carbon-details').checked === true) {
-					code.appendChild(document.createTextNode('# Method: CREDITS / RENEWABLE / BOTH'));
-					code.appendChild(document.createElement('br'));
-					code.appendChild(document.createTextNode('# Percent: 100%'));
+					code.appendChild(document.createTextNode('services = [ ]'));
 				}
 				if (code.innerText != "") {
 					p.appendChild(code).classList.add('code');
