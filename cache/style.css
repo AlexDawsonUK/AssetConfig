@@ -1,15 +1,11 @@
 @font-face {
 	font-family:'PTSerif';
-	src:local('PTSerif Regular'),
-		url('fonts/PTSerif-Regular.woff2') format('woff2'),
-		url('fonts/PTSerif-Regular.woff') format('woff');
+	src:local('PTSerif Regular'), url('fonts/PTSerif-Regular.woff2') format('woff2');
 	font-display: swap;
 }
 @font-face {
 	font-family:'PTSerif';
-	src:local('PTSerif Bold'),
-		url('fonts/PTSerif-Bold.woff2') format('woff2'),
-		url('fonts/PTSerif-Bold.woff') format('woff');
+	src:local('PTSerif Bold'), url('fonts/PTSerif-Bold.woff2') format('woff2');
 	font-display: swap;
 	font-weight: bold;
 }
